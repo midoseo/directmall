@@ -38,18 +38,24 @@
 /* WHY icons */
 .safe .why{background:#f6f4f2;}
 .safe .why h2{text-align:center;margin-bottom:52px;}
-.safe .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:44px 20px;}
-.safe .feat{text-align:center;}
+.safe .grid{display:flex;flex-wrap:wrap;justify-content:center;gap:44px 20px;}
+.safe .feat{text-align:center;flex:0 0 31%;}
 .safe .feat svg{width:50px;height:50px;stroke:#1a1a1a;stroke-width:1.4;fill:none;margin:0 auto 16px;}
 .safe .feat b{display:block;font-size:15px;font-weight:700;}
 .safe .feat small{display:block;font-size:12.5px;color:#888;margin-top:5px;line-height:1.5;}
 
 /* ART / composition */
 .safe .art{background:#fff;text-align:center;}
-.safe .art .art-img{max-width:340px;margin:40px auto 0;}
-.safe .art .comp-list{max-width:460px;margin:28px auto 0;text-align:left;list-style:none;}
-.safe .art .comp-list li{position:relative;padding:7px 0 7px 16px;font-size:14px;color:#555;border-bottom:1px dashed #eee;}
-.safe .art .comp-list li::before{content:'';position:absolute;left:0;top:15px;width:5px;height:5px;border-radius:50%;background:#d0384a;}
+.safe .art-diagram{position:relative;max-width:700px;margin:44px auto 0;aspect-ratio:100/56;}
+.safe .art-diagram .art-img{position:absolute;left:22%;top:0;width:56%;height:100%;object-fit:contain;}
+.safe .callout{position:absolute;inset:0;}
+.safe .cdot{position:absolute;left:var(--x);top:var(--y);width:7px;height:7px;border-radius:50%;background:#2f6fd6;transform:translate(-50%,-50%);z-index:2;}
+.safe .vline{position:absolute;left:var(--x);top:var(--y);bottom:calc(100% - var(--ly));width:0;border-left:1px dashed #bbb;}
+.safe .lrow{position:absolute;top:var(--ly);display:flex;align-items:center;gap:6px;transform:translateY(-50%);}
+.safe .hline{flex:1 1 auto;min-width:6px;height:0;border-top:1px dashed #bbb;}
+.safe .clabel{flex:0 0 auto;font-size:12.5px;font-weight:700;color:#333;white-space:nowrap;}
+.safe .callout[data-side="right"] .lrow{left:var(--x);right:2%;}
+.safe .callout[data-side="left"] .lrow{left:2%;right:calc(100% - var(--x));flex-direction:row-reverse;}
 
 /* COMPONENTS thumbs */
 .safe .parts{background:#f6f4f2;text-align:center;}
@@ -59,11 +65,10 @@
 .safe .thumbs figcaption{font-size:12.5px;color:#888;margin-top:10px;}
 
 /* HOLDER lifestyle-like */
-.safe .holder{background:#1a1a1a;color:#fff;text-align:center;}
-.safe .holder .lead{color:#b9b9b9;}
-.safe .holder .thumbs figure{background:#262626;}
-.safe .holder .thumbs figcaption{color:#999;}
-.safe .holder .thumbs b{display:block;color:#fff;font-size:14px;margin-top:10px;}
+.safe .holder{background:#fff;text-align:center;}
+.safe .holder .thumbs figure{width:34%;min-width:220px;background:#f6f4f2;padding:28px 16px 20px;}
+.safe .holder .thumbs img{max-height:220px;}
+.safe .holder .thumbs b{display:block;color:#1a1a1a;font-size:14px;margin-top:14px;}
 
 /* SPEC */
 .safe .spec{background:#fff;padding-top:20px;}
@@ -141,10 +146,10 @@
   <!-- HERO -->
   <section class="hero">
     <p class="eyebrow">에스원 AED · 자동심장충격기</p>
-    <h1>1초의 판단이<br>생명을 살립니다</h1>
-    <p class="sub">AED10002 · 니혼코덴(일본)</p>
-    <p class="tags">성인/소아 겸용 &nbsp;<span>·</span>&nbsp; 사용방법 도우미 &nbsp;<span>·</span>&nbsp; IP55 방수방진</p>
-    <img class="hero-img" src="https://www.s1.co.kr/images/ko/secom/img_secom_aed10002.png" alt="에스원 자동심장충격기 AED10002">
+    <h1>생명을 살리는 기술<br>에스원 자동심장충격기(AED)</h1>
+    <p class="sub">AED10002 · 자동심장충격기</p>
+    <p class="tags">성인/소아 겸용 &nbsp;<span>·</span>&nbsp; 음성안내로 간단한 조작 &nbsp;<span>·</span>&nbsp; 덮개 개방 즉시 작동</p>
+    <img class="hero-img" src="img_secom_aed10002.png" alt="에스원 자동심장충격기 AED10002">
   </section>
 
   <!-- INTRO -->
@@ -171,10 +176,6 @@
         <b>간편한 사용</b><small>간단한 사용법과<br>음성 안내로 혼선 최소화</small>
       </div>
       <div class="feat">
-        <svg viewBox="0 0 24 24"><path d="M12 3v18M6 8l-3 4 3 4M18 8l3 4-3 4"/></svg>
-        <b>고객 맞춤 판매</b><small>렌탈 또는 일시불 구매<br>(렌탈 시 년 1회 정기점검)</small>
-      </div>
-      <div class="feat">
         <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
         <b>신속한 A/S</b><small>24시간 고객센터·전국 A/S망<br>보증기간 내 신속 대응</small>
       </div>
@@ -188,26 +189,26 @@
   <!-- ART: composition -->
   <section class="sec art">
     <p class="eyebrow">PRODUCT</p>
-    <h2>제품 내 구성 안내</h2>
-    <img class="art-img" src="https://www.s1.co.kr/images/ko/secom/img_secom_aed10002.png" alt="AED10002 제품 구성 안내">
-    <ul class="comp-list">
-      <li>셀프 작동 테스트</li>
-      <li>전극패드</li>
-      <li>사용방법 도우미</li>
-      <li>배터리 작동 테스트</li>
-      <li>성인/소아 선택 버튼</li>
-      <li>쇼크 버튼</li>
-    </ul>
+    <h2>제품 소개</h2>
+    <div class="art-diagram">
+      <img class="art-img" src="img_secom_aed10002.png" alt="AED10002 제품 구성 안내">
+      <div class="callout" data-side="left" style="--y:62%;--ly:62%;--x:33%"><span class="cdot"></span><span class="vline"></span><div class="lrow"><span class="hline"></span><span class="clabel">셀프 작동 테스트</span></div></div>
+      <div class="callout" data-side="right" style="--y:20%;--ly:20%;--x:56%"><span class="cdot"></span><span class="vline"></span><div class="lrow"><span class="hline"></span><span class="clabel">전극패드</span></div></div>
+      <div class="callout" data-side="right" style="--y:51%;--ly:51%;--x:43%"><span class="cdot"></span><span class="vline"></span><div class="lrow"><span class="hline"></span><span class="clabel">사용방법 도우미</span></div></div>
+      <div class="callout" data-side="right" style="--y:56%;--ly:58%;--x:38%"><span class="cdot"></span><span class="vline"></span><div class="lrow"><span class="hline"></span><span class="clabel">배터리 작동 테스트</span></div></div>
+      <div class="callout" data-side="right" style="--y:62%;--ly:65%;--x:47%"><span class="cdot"></span><span class="vline"></span><div class="lrow"><span class="hline"></span><span class="clabel">성인/소아 선택 버튼</span></div></div>
+      <div class="callout" data-side="right" style="--y:62%;--ly:72%;--x:43%"><span class="cdot"></span><span class="vline"></span><div class="lrow"><span class="hline"></span><span class="clabel">쇼크 버튼</span></div></div>
+    </div>
   </section>
 
   <!-- 구성품 -->
   <section class="sec parts">
     <h2>기본 구성품</h2>
     <div class="thumbs">
-      <figure><img src="https://www.s1.co.kr/images/ko/secom/img_aed10002_compo01.png" alt="배터리"><figcaption>배터리</figcaption></figure>
-      <figure><img src="https://www.s1.co.kr/images/ko/secom/img_aed10002_compo02.png" alt="전극패드"><figcaption>전극패드 (1회용)</figcaption></figure>
-      <figure><img src="https://www.s1.co.kr/images/ko/secom/img_aed10002_compo03.png" alt="전용 가방"><figcaption>전용 가방</figcaption></figure>
-      <figure><img src="https://www.s1.co.kr/images/ko/secom/img_aed10002_compo04.png" alt="레스큐킷"><figcaption>레스큐킷 (별도구매)</figcaption></figure>
+      <figure><img src="img_aed10002_compo01.png" alt="배터리"><figcaption>배터리</figcaption></figure>
+      <figure><img src="img_aed10002_compo02.png" alt="전극패드"><figcaption>전극패드 (1회용)</figcaption></figure>
+      <figure><img src="img_aed10002_compo03.png" alt="전용 가방"><figcaption>전용 가방</figcaption></figure>
+      <figure><img src="img_aed10002_compo04.png" alt="레스큐킷"><figcaption>레스큐킷 (별도구매)</figcaption></figure>
     </div>
   </section>
 
@@ -217,8 +218,8 @@
     <h2>거치대</h2>
     <p class="lead">설치 환경에 맞는 스탠드형 · 벽부형 거치대를 별도 구매할 수 있습니다.</p>
     <div class="thumbs">
-      <figure><img src="https://www.s1.co.kr/images/ko/secom/img_shocker_holder01.png" alt="스탠드형 거치대"><b>스탠드형</b><figcaption>370×1,200×180mm<br>문열림 감지, 경고음</figcaption></figure>
-      <figure><img src="https://www.s1.co.kr/images/ko/secom/img_shocker_holder02.png" alt="벽부형 거치대"><b>벽부형</b><figcaption>360×390×180mm<br>문열림 감지, 경고음</figcaption></figure>
+      <figure><img src="img_holder_stand.jpg" alt="스탠드형 거치대"><b>스탠드형</b><figcaption>370×1,200×180mm<br>문열림 감지, 경고음</figcaption></figure>
+      <figure><img src="img_holder_wall.jpg" alt="벽부형 거치대"><b>벽부형</b><figcaption>360×390×180mm<br>문열림 감지, 경고음</figcaption></figure>
     </div>
   </section>
 
@@ -288,10 +289,6 @@
     <div class="qa">
       <p class="q"><i>Q</i> 성인과 소아 모두 사용할 수 있나요?</p>
       <p class="a">네. 간단한 스위치 모드 변경만으로 성인과 소아를 구분하여 사용할 수 있습니다.</p>
-    </div>
-    <div class="qa">
-      <p class="q"><i>Q</i> 렌탈과 일시불 구매 중 무엇을 선택해야 하나요?</p>
-      <p class="a">초기 비용 절감이 필요하면 렌탈을, 장기적으로 직접 소유·관리하고자 하면 일시불 구매를 추천드립니다. 렌탈 이용 시 년 1회 정기점검이 포함됩니다.</p>
     </div>
     <div class="qa">
       <p class="q"><i>Q</i> 전극패드나 배터리는 어떻게 교체하나요?</p>
