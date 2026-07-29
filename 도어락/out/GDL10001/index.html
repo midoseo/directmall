@@ -1,0 +1,391 @@
+<!--
+  ============================================================
+  에스원 유리문형 도어락 (GDL10001) — 카페24 상품 상세설명 삽입용 [v3.1]
+  · 상세설명 에디터 [HTML] 소스 모드에 아래 전체를 붙여넣기
+  · images/ 경로는 웹FTP 업로드 후 실제 경로로 치환
+  · 저장 후 위지윅 모드로 재전환 금지 (style 태그 삭제됨)
+  ============================================================
+-->
+<style>
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+
+/* ── 원본 디자인 CSS (색상·톤 유지, 폰트크기만 유동화) ── */
+.lucell{max-width:860px;margin:0 auto;font-family:Pretendard,'Noto Sans KR','Apple SD Gothic Neo','맑은 고딕',sans-serif;color:#1a1a1a;line-height:1.65;-webkit-text-size-adjust:100%;letter-spacing:-0.01em;}
+.lucell *{margin:0;padding:0;box-sizing:border-box;}
+.lucell img{display:block;max-width:100%;height:auto;}
+.lucell .eyebrow{font-size:13px;font-size:clamp(12px,1.67cqi,13px);letter-spacing:0.22em;font-weight:700;color:#3562e8;text-transform:uppercase;margin-bottom:18px;}
+.lucell h2{font-size:32px;font-size:clamp(23.7px,4.1cqi,32px);font-weight:800;line-height:1.28;letter-spacing:-0.03em;}
+.lucell .lead{font-size:16px;font-size:clamp(14.1px,2.05cqi,16px);color:#555;margin-top:18px;line-height:1.75;word-break:keep-all;}
+.lucell .sec{padding:80px 34px;}
+.lucell .center{text-align:center;}
+
+/* HERO */
+.lucell .hero{background:#fff;color:#1a1a1a;padding:64px 34px 0;text-align:center;overflow:hidden;border-bottom:1px solid #eee;}
+.lucell .hero .eyebrow{color:#3562e8;}
+.lucell .hero h1{font-size:40px;font-size:clamp(29.6px,5.13cqi,40px);font-weight:800;line-height:1.28;letter-spacing:-0.04em;margin:0 0 16px;color:#1a1a1a;}
+.lucell .hero .sub{font-size:15px;font-size:clamp(13.8px,1.92cqi,15px);color:#666;letter-spacing:0.02em;}
+.lucell .hero .tags{margin-top:22px;font-size:13px;font-size:clamp(12px,1.67cqi,13px);color:#999;letter-spacing:0.02em;}
+.lucell .hero .tags span{color:#3562e8;}
+.lucell .hero-img{max-width:600px;margin:38px auto 0;border-radius:16px;}
+
+/* INTRO */
+.lucell .intro{background:#fff;text-align:center;}
+.lucell .intro h2{font-size:28px;font-size:clamp(20.7px,3.59cqi,28px);}
+.lucell .quote-en{font-size:13px;font-size:clamp(12px,1.67cqi,13px);letter-spacing:0.18em;color:#3562e8;font-weight:700;margin-top:22px;}
+
+/* WHY icons */
+.lucell .why{background:#f5f6f9;}
+.lucell .why h2{text-align:center;margin-bottom:52px;}
+.lucell .grid{display:flex;flex-wrap:wrap;justify-content:center;gap:44px 20px;}
+.lucell .feat{text-align:center;flex:0 0 31%;}
+.lucell .feat svg{width:46px;height:46px;stroke:#1a1a1a;stroke-width:1.4;fill:none;margin:0 auto 16px;}
+.lucell .feat b{display:block;font-size:15px;font-size:clamp(13.8px,1.92cqi,15px);font-weight:700;}
+.lucell .feat small{display:block;font-size:12.5px;font-size:clamp(11.5px,1.6cqi,12.5px);color:#888;margin-top:6px;line-height:1.55;word-break:keep-all;}
+
+/* INSTALL / NOTE cards */
+.lucell .install{background:#fff;}
+.lucell .install h2{text-align:center;margin-bottom:10px;}
+.lucell .install .sub-c{text-align:center;color:#888;font-size:14px;font-size:clamp(12.9px,1.79cqi,14px);margin-bottom:36px;word-break:keep-all;}
+.lucell .install-cards{display:flex;flex-direction:column;gap:14px;max-width:640px;margin:0 auto;text-align:left;}
+.lucell .install-cards .card{background:#f5f6f9;border-radius:14px;padding:18px 20px;}
+.lucell .install-cards .num{color:#3562e8;font-weight:800;font-size:12.5px;font-size:clamp(11.5px,1.6cqi,12.5px);letter-spacing:0.04em;margin-right:4px;}
+.lucell .install-cards .card.need .tag{color:#b5690c;}
+.lucell .install-cards .card.noneed .tag{color:#2454c9;}
+.lucell .install-cards .txt b{display:block;font-size:14.5px;font-size:clamp(13.3px,1.86cqi,14.5px);font-weight:800;margin-bottom:4px;}
+.lucell .install-cards .txt p{font-size:13.5px;font-size:clamp(12.4px,1.73cqi,13.5px);color:#555;line-height:1.65;word-break:keep-all;}
+.lucell .install-cards .txt p.fine{font-size:12.5px;font-size:clamp(11.5px,1.6cqi,12.5px);color:#999;margin-top:6px;}
+.lucell .install-cards .tag{font-weight:800;font-size:12.5px;font-size:clamp(11.5px,1.6cqi,12.5px);margin-left:4px;}
+.lucell .warn{max-width:640px;margin:22px auto 0;background:#fff6ea;border:1px solid #f0dcb8;border-radius:12px;padding:16px 18px;font-size:12.5px;font-size:clamp(11.5px,1.6cqi,12.5px);color:#8a5a10;text-align:left;line-height:1.65;word-break:keep-all;}
+.lucell .warn p+p{margin-top:6px;}
+
+/* SPEC */
+.lucell .spec{background:#f5f6f9;padding-top:20px;}
+.lucell .spec h2{text-align:center;margin-bottom:34px;font-size:26px;font-size:clamp(19.2px,3.33cqi,26px);}
+.lucell .spec-img{max-width:560px;margin:0 auto 40px;}
+.lucell table{width:100%;border-collapse:collapse;font-size:14.5px;font-size:clamp(13.3px,1.86cqi,14.5px);border-top:2px solid #1a1a1a;background:#fff;}
+.lucell th,.lucell td{border-bottom:1px solid #eee;padding:14px 16px;text-align:left;vertical-align:middle;}
+.lucell th{background:#faf9f7;width:34%;color:#333;font-weight:600;white-space:nowrap;}
+.lucell td{color:#444;}
+.lucell .spec .cap{text-align:center;font-size:12.5px;font-size:clamp(11.5px,1.6cqi,12.5px);color:#999;margin-top:12px;}
+
+/* RECOMMEND */
+.lucell .rec{background:#fff;}
+.lucell .rec h2{text-align:center;margin-bottom:40px;font-size:26px;font-size:clamp(19.2px,3.33cqi,26px);}
+.lucell .rec-cards{display:flex;flex-direction:column;gap:16px;max-width:640px;margin:0 auto;}
+.lucell .rec-cards .card{background:#f5f6f9;border-radius:14px;padding:20px 22px;font-size:14px;font-size:clamp(12.9px,1.79cqi,14px);color:#444;line-height:1.7;word-break:keep-all;}
+.lucell .rec-cards .card b{color:#3562e8;font-weight:800;}
+
+/* FAQ */
+.lucell .faq{background:#f5f6f9;}
+.lucell .faq h2{text-align:center;margin-bottom:44px;font-size:26px;font-size:clamp(19.2px,3.33cqi,26px);}
+.lucell .qa{max-width:640px;margin:0 auto 22px;}
+.lucell .q{display:flex;gap:12px;background:#fff;border-radius:14px;padding:16px 22px;font-size:15.5px;font-size:clamp(14.3px,1.99cqi,15.5px);font-weight:700;box-shadow:0 2px 10px rgba(20,30,60,.04);}
+.lucell .q i{color:#3562e8;font-style:normal;}
+.lucell .a{font-size:14px;font-size:clamp(12.9px,1.79cqi,14px);color:#666;padding:12px 22px 0;word-break:keep-all;}
+
+/* GUIDE */
+.lucell .guide{background:#fff;}
+.lucell .guide .ghead{text-align:center;margin-bottom:12px;}
+.lucell .guide h2{font-size:24px;font-size:clamp(17.8px,3.08cqi,24px);}
+.lucell .g-wrap{max-width:680px;margin:44px auto 0;}
+.lucell .g-block{margin-bottom:40px;}
+.lucell .g-block h3{font-size:17px;font-size:clamp(15px,2.18cqi,17px);font-weight:800;padding-left:12px;border-left:3px solid #3562e8;margin-bottom:14px;letter-spacing:-0.02em;}
+.lucell .g-block ul{list-style:none;}
+.lucell .g-block li{position:relative;padding:5px 0 5px 15px;font-size:13.5px;font-size:clamp(12.4px,1.73cqi,13.5px);color:#555;line-height:1.65;word-break:keep-all;}
+.lucell .g-block li::before{content:'–';position:absolute;left:0;color:#3562e8;font-weight:700;}
+.lucell .g-tel{font-weight:800;color:#3562e8;font-size:17px;font-size:clamp(15px,2.18cqi,17px);}
+
+/* FOOTER */
+.lucell .foot{background:#0f1115;color:#9a9ca3;padding:44px 34px;text-align:center;font-size:13px;font-size:clamp(12px,1.67cqi,13px);}
+.lucell .foot .brand{font-size:18px;font-size:clamp(15.8px,2.31cqi,18px);font-weight:800;color:#fff;letter-spacing:0.04em;margin-bottom:14px;}
+.lucell .foot .cs{color:#7fa0ff;font-weight:700;font-size:15px;font-size:clamp(13.8px,1.92cqi,15px);margin:10px 0;}
+
+/* ═══════════════════════════════════════════════════════════════════
+   [v3.1] 카페24 상세설명 대응 — 컨테이너 쿼리 전환 + 스킨 CSS 방어
+   · 뷰포트(화면 폭)가 아니라 삽입된 컬럼 폭에 반응
+   · 아래는 위 원본 CSS를 덮어쓰는 오버라이드 (선언 순서 유지 필수)
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* 1) 컨테이너 선언 — 이 파일의 핵심 */
+.lucell{
+  container-type:inline-size;
+  container-name:lud;
+  display:block;
+  width:100%;
+  max-width:860px;
+  margin:0 auto;
+  font-size:16px;
+  text-align:left;
+  word-break:keep-all;
+  overflow-wrap:anywhere;
+  -webkit-text-size-adjust:100%;
+  text-size-adjust:100%;
+}
+
+/* 2) 스킨 CSS 방어 */
+.lucell *,.lucell *::before,.lucell *::after{box-sizing:border-box !important;}
+.lucell *{font-family:inherit;}
+.lucell img{display:block !important;max-width:100% !important;height:auto !important;border:0;}
+.lucell table{width:100% !important;max-width:100% !important;border-collapse:collapse;background:none;}
+.lucell p,.lucell li,.lucell h1,.lucell h2,.lucell h3,.lucell h4{
+  word-break:keep-all;overflow-wrap:anywhere;}
+/* 표 셀은 반드시 break-word.
+   anywhere를 쓰면 min-content 폭이 1글자가 되어 열이 세로로 붕괴한다. */
+.lucell th,.lucell td{word-break:keep-all;overflow-wrap:break-word;}
+.lucell th{white-space:nowrap;}   /* 원본 동작 유지 — 좁은 컨테이너에서만 해제 */
+.lucell ul,.lucell ol{list-style:none;}
+
+/* 3) 아이콘 그리드 — 미디어쿼리 없이 폭에 따라 3열→2열→1열 */
+.lucell .grid{
+  display:grid !important;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:clamp(26px,4.5cqi,44px) clamp(10px,2cqi,20px);
+  justify-content:center;
+}
+.lucell .feat{flex:initial;min-width:0;text-align:center;}
+.lucell .feat svg{width:clamp(38px,6cqi,52px);height:clamp(38px,6cqi,52px);margin:0 auto 14px;display:block;}
+
+/* 4) 썸네일 — 고정 % 폭 제거, 유동 배치 */
+.lucell .thumbs{display:flex;flex-wrap:wrap;justify-content:center;}
+.lucell .thumbs figure{flex:1 1 200px;width:auto;min-width:0;max-width:330px;}
+.lucell .parts .thumbs figure{flex:1 1 130px;width:auto;min-width:0;max-width:200px;}
+.lucell .holder .thumbs figure{flex:1 1 220px;width:auto;min-width:0;max-width:300px;}
+
+/* 5) 콜아웃 다이어그램 */
+.lucell .clabel{font-size:clamp(9.5px,1.6cqi,12.5px);white-space:normal;}
+.lucell .art-diagram{max-width:100%;}
+
+
+/* 7) 이미지 개별 크기·위치 캡 재선언 */
+.lucell .hero-img{max-width:600px !important;}
+.lucell .spec-img{max-width:560px !important;}
+
+/* 6) 컨테이너 폭별 여백/레이아웃 전환 (화면 폭 아님) */
+@container lud (max-width:620px){
+  .lucell .sec{padding:56px 22px;}
+  .lucell .hero{padding:48px 22px 0;}
+  .lucell .foot{padding:36px 22px;}
+  .lucell .fire{padding-top:56px;}
+  .lucell .fire .fire-txt{padding:0 22px;}
+  .lucell .life .overlay{padding:24px 22px 26px;}
+  .lucell .g-table th,.lucell .g-table td{padding:7px 4px;}
+  .lucell table{table-layout:fixed;}
+  .lucell th{white-space:normal;}
+  .lucell .q{padding:14px 16px;}
+  .lucell .a{padding:12px 16px 0;}
+}
+@container lud (max-width:460px){
+  .lucell .sec{padding:44px 16px;}
+  .lucell .hero{padding:40px 16px 0;}
+  .lucell .foot{padding:30px 16px;}
+  .lucell .fire .fire-txt{padding:0 16px;}
+  .lucell .life .overlay{position:static;background:#1a1a1a;padding:22px 16px 26px;}
+  .lucell .art-diagram{aspect-ratio:auto;}
+}
+@container lud (max-width:330px){
+  .lucell .grid{grid-template-columns:1fr;}
+}
+
+
+/* 8) 원본 @media → @container 전환 */
+@container lud (max-width:560px){
+  .lucell .sec{padding:56px 22px;}
+  .lucell h2{font-size:25px;}
+  .lucell .hero h1{font-size:30px;}
+  .lucell th,.lucell td{padding:11px 12px;font-size:13px;}
+}
+
+/* 9) 컨테이너 쿼리 미지원 브라우저 폴백 */
+@supports not (container-type:inline-size){
+@media (max-width:560px){
+  .lucell .sec{padding:56px 22px;}
+  .lucell h2{font-size:25px;}
+  .lucell .hero h1{font-size:30px;}
+  .lucell th,.lucell td{padding:11px 12px;font-size:13px;}
+}
+}
+</style>
+<div class="lucell">
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="eyebrow">에스원 · 유리문형 전자도어락</p>
+    <h1>유리문에도 완벽하게,<br>흔들림 없는 잠금</h1>
+    <p class="sub">에스원 유리문형 도어락 · GDL10001</p>
+    <p class="tags">좌수·우수 겸용 <span>·</span> 1회성 비밀번호 <span>·</span> 화재 안전센서 <span>·</span> 무상 A/S 2년</p>
+    <img class="hero-img" src="images/gdl10001_hero.jpg" alt="유리도어에 설치된 에스원 유리문형 도어락 GDL10001">
+  </section>
+
+  <!-- INTRO -->
+  <section class="sec intro">
+    <h2>유리도어 전용 설계,<br>매장 입구를 스마트하게</h2>
+    <p class="lead">카페, 사무실, 상가 등 유리도어가 많은 상업 공간을 위한 에스원 유리문형 도어락 GDL10001.<br>좌수·우수 상관없이 겸용 설치가 가능하며, 도어 형태에 맞춘 정확한 시공으로 완성도 높은 보안을 제공합니다.</p>
+    <p class="quote-en">DESIGNED FOR GLASS DOORS</p>
+  </section>
+
+  <!-- WHY -->
+  <section class="sec why">
+    <h2 class="center">주요 사양 및 특장점</h2>
+    <div class="grid">
+      <div class="feat">
+        <svg viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="12" rx="2"/><path d="M8 9V6a4 4 0 0 1 8 0v3"/><path d="M12 14v2"/></svg>
+        <b>1회성 비밀번호</b><small>방문객·임시 직원에게 그때그때 발급, 사용 후 자동 만료</small>
+      </div>
+      <div class="feat">
+        <svg viewBox="0 0 24 24"><path d="M3 10v4h4l5 5V5L7 10H3z"/><path d="M17 8a5 5 0 0 1 0 8"/></svg>
+        <b>볼륨 조절 · 매너모드</b><small>매장 상황에 맞게 조작음 크기 조절 및 무음 전환</small>
+      </div>
+      <div class="feat">
+        <svg viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/><path d="M4 4l16 16" stroke-dasharray="1 3"/></svg>
+        <b>엿보기 방지 기능</b><small>허수 비밀번호 입력 가능, 노출 위험 최소화</small>
+      </div>
+      <div class="feat">
+        <svg viewBox="0 0 24 24"><path d="M12 2c2 3-1 4-1 7a3 3 0 0 0 6 0c0-1-.5-2-1-3 3 1 5 4 5 7a8 8 0 1 1-16 0c0-4 3-6 7-11z"/></svg>
+        <b>화재 안전 기능</b><small>온도센서 내장, 이상 고온 감지 시 잠금 자동 해제</small>
+      </div>
+      <div class="feat">
+        <svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 21v-4h6v4"/><circle cx="12" cy="10" r="2"/></svg>
+        <b>실내외 이중 잠금</b><small>내부·외부 잠금 상태를 이중으로 제어해 보안성 강화</small>
+      </div>
+      <div class="feat">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <b>자동 되잠김 조절</b><small>문이 닫힌 후 1~8초 사이 원하는 시간으로 재잠금 설정</small>
+      </div>
+      <div class="feat">
+        <svg viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 11-14h-7l0-6z"/></svg>
+        <b>3만 볼트 전기충격 방지</b><small>정전기·외부 전기충격으로부터 회로를 안전하게 보호</small>
+      </div>
+      <div class="feat">
+        <svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 9-8 10-4.5-1-8-5-8-10V7z"/><path d="M9 12l2 2 4-4"/></svg>
+        <b>무상 A/S 2년</b><small>제조사 직영 A/S 2년 무상 지원</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- 설치 안내 (핵심) -->
+  <section class="sec install">
+    <p class="eyebrow center">INSTALL</p>
+    <h2 class="center">유리도어 설치 안내</h2>
+    <p class="sub-c">도어 형태에 따라 별매품 스트라이커 필요 여부가 다르니 꼭 확인해 주세요</p>
+
+    <div class="install-cards">
+      <div class="card need">
+        <div class="txt"><b><span class="num">01</span>양개 유리도어<span class="tag">스트라이커 필요</span></b><p>문이 두 짝으로 여닫히는 양개형 유리도어는 별매품 스트라이커를 추가로 설치해야 합니다.</p></div>
+      </div>
+      <div class="card noneed">
+        <div class="txt">
+          <b><span class="num">02</span>단개 유리도어<span class="tag">스트라이커 불필요</span></b>
+          <p>문틀(프레임)이 유리가 아닌 경우에는 본체의 데드볼트 위치에 맞춰 프레임을 타공하여 설치하면 되며, 별도의 스트라이커가 필요하지 않습니다.</p>
+          <p class="fine">※ 단개 유리도어라도 문틀 자체가 유리로 되어 있는 경우에는 별매품 스트라이커를 추가로 설치해야 합니다.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="warn">
+      <p>※ 스트라이커는 별매품입니다.</p>
+      <p>※ 도어 실측 후 설치기사와 상담하여 필요 여부를 확인하시기 바랍니다.</p>
+      <p>※ 본 제품은 자체 구매 후 고객이 별도로 설치해야 하는 상품입니다.</p>
+    </div>
+  </section>
+
+  <!-- SPEC -->
+  <section class="sec spec">
+    <h2>제품 사양</h2>
+    <img class="spec-img" src="images/gdl10001_product.png" alt="에스원 유리문형 도어락 GDL10001 제품 이미지">
+    <table>
+      <tbody>
+        <tr><th>모델명</th><td>GDL10001</td></tr>
+        <tr><th>정격 전압</th><td>AA형 알카라인 1.5V 전지(LR6) 4개 (6V)</td></tr>
+        <tr><th>비상 전원</th><td>9V 전지 (6LF22) 1개 (별매품)</td></tr>
+        <tr><th>작동 방법</th><td>기본 전자제어 방식 (비밀번호 입력, 카드 인식)</td></tr>
+        <tr><th>기기의 명칭</th><td>RFID용 무선기기</td></tr>
+        <tr><th>무게</th><td>1.3kg (실내측·실외측 포함)</td></tr>
+        <tr><th>크기 (실내측)</th><td>54.3mm(W) × 173.09mm(H) × 42mm(D)</td></tr>
+        <tr><th>크기 (실외측)</th><td>54.3mm(W) × 173.09mm(H) × 16mm(D)</td></tr>
+        <tr><th>스트라이커 (별매)</th><td>12,000원 (부가세 별도) · 양개 유리도어/유리 프레임 단개도어 설치 시 필요</td></tr>
+        <tr><th>설치 방향</th><td>좌수 · 우수 겸용</td></tr>
+        <tr><th>무상 A/S</th><td>2년</td></tr>
+      </tbody>
+    </table>
+    <p class="cap">※ 제품 사양 및 색상은 개선을 위해 사전 예고 없이 변경될 수 있습니다.</p>
+  </section>
+
+  <!-- 추천 대상 -->
+  <section class="sec rec">
+    <h2>이런 공간에 추천드립니다</h2>
+    <div class="rec-cards">
+      <div class="card"><b>①</b> 카페, 사무실, 상가 등 유리도어를 사용하는 매장의 출입 보안을 강화하고 싶은 사장님</div>
+      <div class="card"><b>②</b> 양개·단개 등 도어 형태에 맞춘 정확한 시공이 필요한 유리도어 매장</div>
+      <div class="card"><b>③</b> 열쇠 없이 1회성 비밀번호로 임시 출입을 관리하고 싶은 상업 공간</div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec faq">
+    <h2>자주 묻는 질문</h2>
+    <div class="qa">
+      <p class="q"><i>Q</i> 모든 유리도어에 설치할 수 있나요?</p>
+      <p class="a">네, 좌수·우수 겸용으로 대부분의 유리도어에 설치 가능합니다. 다만 양개형 유리도어이거나 문틀이 유리인 경우 별매품 스트라이커가 추가로 필요합니다.</p>
+    </div>
+    <div class="qa">
+      <p class="q"><i>Q</i> 스트라이커가 무엇이고, 꼭 구매해야 하나요?</p>
+      <p class="a">스트라이커는 도어락의 데드볼트가 걸리는 별도 부품입니다. 양개 유리도어 또는 유리 프레임의 단개도어는 스트라이커(별매, 12,000원 부가세 별도)가 필요하며, 일반 프레임의 단개 유리도어는 프레임에 직접 타공 설치하므로 스트라이커가 필요하지 않습니다.</p>
+    </div>
+    <div class="qa">
+      <p class="q"><i>Q</i> 구매 가격에 설치까지 포함되어 있나요?</p>
+      <p class="a">아니요. 본 제품은 자체 구매 후 고객이 별도로 설치해야 하는 상품이며, 설치비는 포함되어 있지 않습니다.</p>
+    </div>
+    <div class="qa">
+      <p class="q"><i>Q</i> A/S는 어디로 문의하나요?</p>
+      <p class="a">제조사 A/S 센터(1899-1386)로 문의하시면 됩니다. 무상 A/S 2년이 기본 제공됩니다.</p>
+    </div>
+  </section>
+
+  <!-- GUIDE -->
+  <section class="sec guide">
+    <div class="ghead">
+      <p class="eyebrow">GUIDE</p>
+      <h2>이용 안내 · A/S</h2>
+    </div>
+    <div class="g-wrap">
+
+      <div class="g-block">
+        <h3>A/S 안내</h3>
+        <p style="font-size:14px;color:#333;margin-bottom:10px;">A/S 대표전화 <span class="g-tel">1899-1386</span></p>
+        <ul>
+          <li>본 제품은 제조사에서 직접 A/S를 진행합니다.</li>
+          <li>구매일로부터 2년간 무상 A/S가 제공됩니다. (소모품·사용자 과실로 인한 고장은 제외될 수 있습니다)</li>
+          <li>본체 이상, 배터리 교체, 설정 문의 등은 A/S 대표전화로 연락 주시면 안내해 드립니다.</li>
+        </ul>
+      </div>
+
+      <div class="g-block">
+        <h3>설치 안내</h3>
+        <ul>
+          <li>본 제품은 자체 구매 후 고객이 별도로 설치해야 하는 상품입니다. (설치비 미포함)</li>
+          <li>양개 유리도어, 유리 프레임 단개도어는 별매품 스트라이커 추가 설치가 필요합니다.</li>
+          <li>일반 프레임의 단개 유리도어는 프레임에 데드볼트 위치를 맞춰 타공 후 설치하며, 스트라이커가 필요하지 않습니다.</li>
+          <li>좌수·우수 겸용이며, 정확한 시공을 위해 전문 설치기사를 통한 설치를 권장합니다.</li>
+        </ul>
+      </div>
+
+      <div class="g-block">
+        <h3>교환 및 반품 안내</h3>
+        <ul>
+          <li>제품 하자 및 오배송의 경우 고객센터로 문의 주시면 신속하게 처리해 드립니다.</li>
+          <li>단순 변심 등 소비자 귀책 사유로 인한 반품 시 왕복 배송비를 소비자가 부담하셔야 합니다.</li>
+          <li>제품 개봉 및 설치가 진행된 이후에는 반품·교환이 제한될 수 있습니다.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="foot">
+    <div class="brand">에스원</div>
+    <div>유리문형 도어락 · GDL10001</div>
+    <div class="cs">고객센터 1588-3112</div>
+  </footer>
+
+</div>
