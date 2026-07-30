@@ -50,7 +50,9 @@
 .pdp .install h2{text-align:center;margin-bottom:10px;}
 .pdp .install .sub-c{text-align:center;color:#888;font-size:14px;margin-bottom:36px;word-break:keep-all;}
 .pdp .install-cards{display:flex;flex-direction:column;gap:14px;max-width:640px;margin:0 auto;text-align:left;}
-.pdp .install-cards .card{background:#f5f6f9;border-radius:14px;padding:18px 20px;}
+.pdp .install-cards .card{display:flex;gap:18px;align-items:center;background:#f5f6f9;border-radius:14px;padding:18px 20px;}
+.pdp .install-cards .card .txt{flex:1;}
+.pdp .install-cards .card .thumb{flex:0 0 auto;width:92px;height:92px;object-fit:contain;}
 .pdp .install-cards .num{color:#3562e8;font-weight:800;font-size:12.5px;letter-spacing:0.04em;margin-right:4px;}
 .pdp .install-cards .card.need .tag{color:#b5690c;}
 .pdp .install-cards .card.noneed .tag{color:#2454c9;}
@@ -108,6 +110,8 @@
   .pdp h2{font-size:25px;}
   .pdp .hero h1{font-size:30px;}
   .pdp th,.pdp td{padding:11px 12px;font-size:13px;}
+  .pdp .install-cards .card{flex-direction:column;}
+  .pdp .install-cards .card .thumb{width:100%;height:auto;max-height:160px;}
 }
 </style>
 </head>
@@ -178,6 +182,7 @@
     <div class="install-cards">
       <div class="card need">
         <div class="txt"><b><span class="num">01</span>양개 유리도어<span class="tag">스트라이커 필요</span></b><p>문이 두 짝으로 여닫히는 양개형 유리도어는 별매품 스트라이커를 추가로 설치해야 합니다.</p></div>
+        <img class="thumb" src="images/strike_wing.png" alt="양개 유리도어용 날개형 스트라이커">
       </div>
       <div class="card noneed">
         <div class="txt">
@@ -185,6 +190,7 @@
           <p>문틀(프레임)이 유리가 아닌 경우에는 본체의 데드볼트 위치에 맞춰 프레임을 타공하여 설치하면 되며, 별도의 스트라이커가 필요하지 않습니다.</p>
           <p class="fine">※ 단개 유리도어라도 문틀 자체가 유리로 되어 있는 경우에는 별매품 스트라이커를 추가로 설치해야 합니다.</p>
         </div>
+        <img class="thumb" src="images/strike_clip.png" alt="단개 유리도어(유리 프레임)용 클립형 스트라이커">
       </div>
     </div>
 

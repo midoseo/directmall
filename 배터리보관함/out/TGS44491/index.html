@@ -1,0 +1,453 @@
+<!--
+  ============================================================
+  배터리 보관함(대형) (TGS44491) — 카페24 상품 상세설명 삽입용 [v3.1]
+  · 상세설명 에디터 [HTML] 소스 모드에 아래 전체를 붙여넣기
+  · images/ 경로는 웹FTP 업로드 후 실제 경로로 치환
+  · 저장 후 위지윅 모드로 재전환 금지 (style 태그 삭제됨)
+  ============================================================
+-->
+<style>
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+
+/* ── 원본 디자인 CSS (색상·톤 유지, 폰트크기만 유동화) ── */
+.lucell{max-width:860px;margin:0 auto;font-family:Pretendard,'Noto Sans KR','Apple SD Gothic Neo','맑은 고딕',sans-serif;color:#1a1a1a;line-height:1.65;-webkit-text-size-adjust:100%;letter-spacing:-0.01em;}
+.lucell *{margin:0;padding:0;box-sizing:border-box;}
+.lucell img{display:block;max-width:100%;height:auto;}
+.lucell .eyebrow{font-size:13px;font-size:clamp(12px,1.67cqi,13px);letter-spacing:0.22em;font-weight:700;color:#c0392b;text-transform:uppercase;margin-bottom:18px;}
+.lucell h2{font-size:32px;font-size:clamp(23.7px,4.1cqi,32px);font-weight:800;line-height:1.28;letter-spacing:-0.03em;}
+.lucell .lead{font-size:16px;font-size:clamp(14.1px,2.05cqi,16px);color:#555;margin-top:18px;line-height:1.75;word-break:keep-all;}
+.lucell .sec{padding:80px 34px;}
+.lucell .center{text-align:center;}
+
+/* HERO */
+.lucell .hero{background:#fff;color:#1a1a1a;padding:60px 34px 0;text-align:center;overflow:hidden;}
+.lucell .hero .eyebrow{color:#c0392b;}
+.lucell .hero h1{font-size:44px;font-size:clamp(32.6px,5.64cqi,44px);font-weight:800;line-height:1.26;letter-spacing:-0.03em;margin:0 0 16px;color:#1a1a1a;}
+.lucell .hero .sub{font-size:16px;font-size:clamp(14.1px,2.05cqi,16px);color:#555;letter-spacing:0.02em;}
+.lucell .hero .tags{margin-top:22px;font-size:13px;font-size:clamp(12px,1.67cqi,13px);color:#888;letter-spacing:0.02em;}
+.lucell .hero .tags span{color:#c0392b;}
+.lucell .hero-img{margin:34px auto 0;max-width:380px;background:#fff;padding:24px 24px 10px;}
+
+/* INTRO */
+.lucell .intro{background:#fff;text-align:center;}
+.lucell .intro h2{font-size:28px;font-size:clamp(20.7px,3.59cqi,28px);}
+.lucell .quote-en{font-size:13px;font-size:clamp(12px,1.67cqi,13px);letter-spacing:0.16em;color:#c0392b;font-weight:700;margin-top:20px;}
+
+/* WHY icons */
+.lucell .why{background:#f5f3ef;}
+.lucell .why h2{text-align:center;margin-bottom:48px;}
+.lucell .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px 18px;}
+.lucell .feat{text-align:center;}
+.lucell .feat svg{width:48px;height:48px;stroke:#1a1a1a;stroke-width:1.4;fill:none;margin:0 auto 14px;}
+.lucell .feat b{display:block;font-size:15.5px;font-size:clamp(14.3px,1.99cqi,15.5px);font-weight:700;}
+.lucell .feat small{display:block;font-size:12.5px;font-size:clamp(11.5px,1.6cqi,12.5px);color:#888;margin-top:5px;line-height:1.5;word-break:keep-all;}
+
+/* STEP (3단계 화재방호) */
+.lucell .step{background:#fff;}
+.lucell .step h2{text-align:center;margin-bottom:12px;}
+.lucell .step .lead.center{max-width:520px;margin-left:auto;margin-right:auto;}
+.lucell .step-wrap{max-width:640px;margin:44px auto 0;display:flex;flex-direction:column;gap:0;}
+.lucell .step-item{display:flex;gap:18px;padding:22px 0;border-bottom:1px solid #eee;}
+.lucell .step-item:last-child{border-bottom:none;}
+.lucell .step-num{flex:0 0 auto;width:46px;height:46px;border-radius:50%;background:#1a1a1a;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;font-size:clamp(13.8px,1.92cqi,15px);}
+.lucell .step-body b{display:block;font-size:16px;font-size:clamp(14.1px,2.05cqi,16px);font-weight:800;margin-bottom:6px;}
+.lucell .step-body ul{list-style:none;}
+.lucell .step-body li{position:relative;padding:3px 0 3px 13px;font-size:13.5px;font-size:clamp(12.4px,1.73cqi,13.5px);color:#555;line-height:1.6;word-break:keep-all;}
+.lucell .step-body li::before{content:'–';position:absolute;left:0;color:#c0392b;font-weight:700;}
+
+/* CERT */
+.lucell .cert{background:#1a1a1a;color:#fff;text-align:center;}
+.lucell .cert .lead{color:#bbb;}
+.lucell .cert .badge{display:inline-block;margin-top:26px;padding:10px 22px;border:1px solid #e0655a;border-radius:40px;color:#e0655a;font-weight:700;font-size:14.5px;font-size:clamp(13.3px,1.86cqi,14.5px);}
+.lucell .cert table{width:100%;max-width:560px;margin:34px auto 0;border-collapse:collapse;font-size:13.5px;font-size:clamp(12.4px,1.73cqi,13.5px);border-top:1.5px solid #444;}
+.lucell .cert th,.lucell .cert td{border-bottom:1px solid #333;padding:12px 10px;text-align:center;color:#ddd;}
+.lucell .cert th{background:#232323;font-weight:700;color:#fff;font-size:13px;font-size:clamp(12px,1.67cqi,13px);}
+.lucell .cert td.ok{color:#7fd18a;font-weight:700;}
+
+/* LINEUP */
+.lucell .line{background:#f5f3ef;text-align:center;}
+.lucell .line h2{margin-bottom:8px;}
+.lucell .thumbs{display:flex;gap:14px;justify-content:center;margin-top:36px;flex-wrap:wrap;}
+.lucell .thumbs figure{width:30%;min-width:150px;background:#fff;border-radius:12px;padding:16px 8px 12px;border:2px solid transparent;}
+.lucell .thumbs figure.cur{border-color:#c0392b;}
+.lucell .thumbs img{margin:0 auto;max-height:150px;width:auto;}
+.lucell .thumbs figcaption{font-size:12.5px;font-size:clamp(11.5px,1.6cqi,12.5px);color:#888;margin-top:8px;font-weight:600;}
+.lucell .thumbs figure.cur figcaption{color:#c0392b;}
+.lucell .line-table-wrap{overflow-x:auto;margin-top:28px;}
+.lucell .line table{width:100%;min-width:520px;border-collapse:collapse;font-size:13px;font-size:clamp(12px,1.67cqi,13px);border-top:1.5px solid #1a1a1a;background:#fff;}
+.lucell .line th,.lucell .line td{border-bottom:1px solid #eee;padding:11px 8px;text-align:center;}
+.lucell .line th{background:#faf9f7;font-weight:700;color:#333;}
+.lucell .line th.cur,.lucell .line td.cur{background:#fbeceb;color:#c0392b;font-weight:700;}
+.lucell .line td.h{background:#faf9f7;font-weight:600;color:#333;text-align:left;padding-left:14px;}
+
+/* SPEC */
+.lucell .spec{background:#fff;padding-top:20px;}
+.lucell .spec h2{text-align:center;margin-bottom:34px;font-size:26px;font-size:clamp(19.2px,3.33cqi,26px);}
+.lucell table.spectbl{width:100%;border-collapse:collapse;font-size:14.5px;font-size:clamp(13.3px,1.86cqi,14.5px);border-top:2px solid #1a1a1a;}
+.lucell .spectbl th,.lucell .spectbl td{border-bottom:1px solid #eee;padding:14px 16px;text-align:left;vertical-align:middle;}
+.lucell .spectbl th{background:#faf9f7;width:34%;color:#333;font-weight:600;white-space:nowrap;}
+.lucell .spectbl td{color:#444;}
+
+/* FAQ */
+.lucell .faq{background:#f5f3ef;}
+.lucell .faq h2{text-align:center;margin-bottom:40px;font-size:26px;font-size:clamp(19.2px,3.33cqi,26px);}
+.lucell .qa{max-width:640px;margin:0 auto 20px;}
+.lucell .q{display:flex;gap:12px;background:#fff;border-radius:14px;padding:16px 22px;font-size:15.5px;font-size:clamp(14.3px,1.99cqi,15.5px);font-weight:700;box-shadow:0 2px 10px rgba(0,0,0,.03);}
+.lucell .q i{color:#c0392b;font-style:normal;}
+.lucell .a{font-size:14px;font-size:clamp(12.9px,1.79cqi,14px);color:#666;padding:12px 22px 0;word-break:keep-all;}
+
+/* GUIDE */
+.lucell .guide{background:#fff;}
+.lucell .guide .ghead{text-align:center;margin-bottom:12px;}
+.lucell .guide h2{font-size:24px;font-size:clamp(17.8px,3.08cqi,24px);}
+.lucell .g-wrap{max-width:680px;margin:44px auto 0;}
+.lucell .g-block{margin-bottom:40px;}
+.lucell .g-block h3{font-size:17px;font-size:clamp(15px,2.18cqi,17px);font-weight:800;padding-left:12px;border-left:3px solid #c0392b;margin-bottom:14px;letter-spacing:-0.02em;}
+.lucell .g-block h4{font-size:14px;font-size:clamp(12.9px,1.79cqi,14px);font-weight:700;color:#555;margin:18px 0 8px;}
+.lucell .g-block ul{list-style:none;}
+.lucell .g-block li{position:relative;padding:5px 0 5px 15px;font-size:13.5px;font-size:clamp(12.4px,1.73cqi,13.5px);color:#555;line-height:1.65;word-break:keep-all;}
+.lucell .g-block li::before{content:'–';position:absolute;left:0;color:#c0392b;font-weight:700;}
+.lucell .g-warn{font-size:13px;font-size:clamp(12px,1.67cqi,13px);color:#b23a2e;line-height:1.65;margin-top:16px;background:#fbf2f0;padding:13px 15px;border-radius:8px;word-break:keep-all;}
+.lucell .g-table{width:100%;border-collapse:collapse;font-size:13px;font-size:clamp(12px,1.67cqi,13px);margin-top:8px;border-top:1.5px solid #333;}
+.lucell .g-table th,.lucell .g-table td{border-bottom:1px solid #eee;padding:9px 8px;text-align:center;vertical-align:middle;line-height:1.5;}
+.lucell .g-table th{background:#faf9f7;font-weight:700;color:#333;font-size:12.5px;font-size:clamp(11.5px,1.6cqi,12.5px);}
+.lucell .g-table td{color:#555;}
+.lucell .g-table td.l{text-align:left;}
+.lucell .g-note{font-size:12px;font-size:clamp(11px,1.54cqi,12px);color:#999;margin-top:9px;line-height:1.6;}
+.lucell .g-tel{font-weight:800;color:#b23a2e;font-size:16.5px;font-size:clamp(14.5px,2.12cqi,16.5px);}
+
+
+
+
+/* FOOTER */
+.lucell .foot{background:#141414;color:#cfcfcf;padding:44px 34px;text-align:center;font-size:13px;font-size:clamp(12px,1.67cqi,13px);}
+.lucell .foot .brand{font-size:20px;font-size:clamp(17.6px,2.56cqi,20px);font-weight:800;color:#fff;letter-spacing:0.06em;margin-bottom:14px;}
+.lucell .foot .cs{color:#e0655a;font-weight:700;font-size:15px;font-size:clamp(13.8px,1.92cqi,15px);margin:10px 0;}
+
+/* ═══════════════════════════════════════════════════════════════════
+   [v3.1] 카페24 상세설명 대응 — 컨테이너 쿼리 전환 + 스킨 CSS 방어
+   · 뷰포트(화면 폭)가 아니라 삽입된 컬럼 폭에 반응
+   · 아래는 위 원본 CSS를 덮어쓰는 오버라이드 (선언 순서 유지 필수)
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* 1) 컨테이너 선언 — 이 파일의 핵심 */
+.lucell{
+  container-type:inline-size;
+  container-name:lud;
+  display:block;
+  width:100%;
+  max-width:860px;
+  margin:0 auto;
+  font-size:16px;
+  text-align:left;
+  word-break:keep-all;
+  overflow-wrap:anywhere;
+  -webkit-text-size-adjust:100%;
+  text-size-adjust:100%;
+}
+
+/* 2) 스킨 CSS 방어 */
+.lucell *,.lucell *::before,.lucell *::after{box-sizing:border-box !important;}
+.lucell *{font-family:inherit;}
+.lucell img{display:block !important;max-width:100% !important;height:auto !important;border:0;}
+.lucell table{width:100% !important;max-width:100% !important;border-collapse:collapse;background:none;}
+.lucell p,.lucell li,.lucell h1,.lucell h2,.lucell h3,.lucell h4{
+  word-break:keep-all;overflow-wrap:anywhere;}
+/* 표 셀은 반드시 break-word.
+   anywhere를 쓰면 min-content 폭이 1글자가 되어 열이 세로로 붕괴한다. */
+.lucell th,.lucell td{word-break:keep-all;overflow-wrap:break-word;}
+.lucell th{white-space:nowrap;}   /* 원본 동작 유지 — 좁은 컨테이너에서만 해제 */
+.lucell ul,.lucell ol{list-style:none;}
+
+/* 3) 아이콘 그리드 — 미디어쿼리 없이 폭에 따라 3열→2열→1열 */
+.lucell .grid{
+  display:grid !important;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:clamp(26px,4.5cqi,44px) clamp(10px,2cqi,20px);
+  justify-content:center;
+}
+.lucell .feat{flex:initial;min-width:0;text-align:center;}
+.lucell .feat svg{width:clamp(38px,6cqi,52px);height:clamp(38px,6cqi,52px);margin:0 auto 14px;display:block;}
+
+/* 4) 썸네일 — 고정 % 폭 제거, 유동 배치 */
+.lucell .thumbs{display:flex;flex-wrap:wrap;justify-content:center;}
+.lucell .thumbs figure{flex:1 1 200px;width:auto;min-width:0;max-width:330px;}
+.lucell .parts .thumbs figure{flex:1 1 130px;width:auto;min-width:0;max-width:200px;}
+.lucell .holder .thumbs figure{flex:1 1 220px;width:auto;min-width:0;max-width:300px;}
+
+/* 5) 콜아웃 다이어그램 */
+.lucell .clabel{font-size:clamp(9.5px,1.6cqi,12.5px);white-space:normal;}
+.lucell .art-diagram{max-width:100%;}
+
+
+/* 7) 이미지 개별 크기·위치 캡 재선언 */
+.lucell .hero-img{max-width:380px !important;}
+
+/* 6) 컨테이너 폭별 여백/레이아웃 전환 (화면 폭 아님) */
+@container lud (max-width:620px){
+  .lucell .sec{padding:56px 22px;}
+  .lucell .hero{padding:48px 22px 0;}
+  .lucell .foot{padding:36px 22px;}
+  .lucell .fire{padding-top:56px;}
+  .lucell .fire .fire-txt{padding:0 22px;}
+  .lucell .life .overlay{padding:24px 22px 26px;}
+  .lucell .g-table th,.lucell .g-table td{padding:7px 4px;}
+  .lucell table{table-layout:fixed;}
+  .lucell th{white-space:normal;}
+  .lucell .q{padding:14px 16px;}
+  .lucell .a{padding:12px 16px 0;}
+}
+@container lud (max-width:460px){
+  .lucell .sec{padding:44px 16px;}
+  .lucell .hero{padding:40px 16px 0;}
+  .lucell .foot{padding:30px 16px;}
+  .lucell .fire .fire-txt{padding:0 16px;}
+  .lucell .life .overlay{position:static;background:#1a1a1a;padding:22px 16px 26px;}
+  .lucell .art-diagram{aspect-ratio:auto;}
+}
+@container lud (max-width:330px){
+  .lucell .grid{grid-template-columns:1fr;}
+}
+
+
+/* 8) 원본 @media → @container 전환 */
+@container lud (max-width:560px){.lucell .g-table th,.lucell .g-table td{padding:7px 5px;font-size:11.5px;}}
+@container lud (max-width:560px){
+  .lucell .sec{padding:56px 22px;}
+  .lucell h2{font-size:25px;}
+  .lucell .hero h1{font-size:32px;}
+  .lucell .grid{grid-template-columns:repeat(2,1fr);gap:32px 12px;}
+  .lucell .thumbs figure{width:100%;}
+  .lucell th,.lucell td{padding:11px 10px;font-size:13px;}
+}
+
+/* 9) 컨테이너 쿼리 미지원 브라우저 폴백 */
+@supports not (container-type:inline-size){
+@media (max-width:560px){.lucell .g-table th,.lucell .g-table td{padding:7px 5px;font-size:11.5px;}}
+@media (max-width:560px){
+  .lucell .sec{padding:56px 22px;}
+  .lucell h2{font-size:25px;}
+  .lucell .hero h1{font-size:32px;}
+  .lucell .grid{grid-template-columns:repeat(2,1fr);gap:32px 12px;}
+  .lucell .thumbs figure{width:100%;}
+  .lucell th,.lucell td{padding:11px 10px;font-size:13px;}
+}
+}
+</style>
+<div class="lucell">
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="eyebrow">BATTERY STORAGE · 배터리 보관함(대형)</p>
+    <h1>배터리 화재,<br>보관 단계에서 막습니다</h1>
+    <p class="sub">배터리 보관함(대형) · TGS44491</p>
+    <p class="tags">자동 화재감지·소화 &nbsp;<span>·</span>&nbsp; 자동안전도어 &nbsp;<span>·</span>&nbsp; 누전차단 배전함</p>
+    <img class="hero-img" src="images/L.png" alt="배터리 보관함(대형) 제품 사진">
+  </section>
+
+  <!-- INTRO -->
+  <section class="sec intro">
+    <h2>리튬이온 배터리,<br>더 이상 방치할 수 없습니다</h2>
+    <p class="lead">손상되거나 과충전된 배터리는 열폭주로 인한 화재·폭발 위험이 있습니다.<br>배터리 보관함은 감지-소화-차단이 유기적으로 작동하는 3단계 화재방호 구조로 보관 중 발생할 수 있는 사고를 최소화합니다.</p>
+    <p class="quote-en">DETECT · SUPPRESS · CONTAIN</p>
+  </section>
+
+  <!-- WHY -->
+  <section class="sec why">
+    <h2>배터리 보관함의<br>6가지 안전 장치</h2>
+    <div class="grid">
+      <div class="feat">
+        <svg viewBox="0 0 24 24"><path d="M12 3a5 5 0 0 0-5 5c0 5-2 6-2 6h14s-2-1-2-6a5 5 0 0 0-5-5z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>
+        <b>화재 감지 시스템</b><small>연기·열 교차감지, 85db 이상 경보음<br>(정온식, 수명 약 10년)</small>
+      </div>
+      <div class="feat">
+        <svg viewBox="0 0 24 24"><path d="M12 2c1 4-2 5-2 8a4 4 0 0 0 8 0c0-1-.3-2-1-3 .3 3-2 3-2 1 0-3-1-5-3-6zM7 13a5 5 0 0 0 10 3"/></svg>
+        <b>소공간 자동 소화장치</b><small>145℃ 작동, A/B/C급 소화<br>방호체적 2.88㎥ · 소화기 3kg</small>
+      </div>
+      <div class="feat">
+        <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M14 4v16M18 10l-4 2 4 2"/></svg>
+        <b>자동안전도어</b><small>70℃ 이상 온도에서<br>도어 자동 닫힘</small>
+      </div>
+      <div class="feat">
+        <svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="1"/><circle cx="9" cy="9" r="1.2"/><circle cx="15" cy="9" r="1.2"/><circle cx="9" cy="15" r="1.2"/><circle cx="15" cy="15" r="1.2"/></svg>
+        <b>대전방지 코팅 · 타공 선반</b><small>정전기 방지 특수 코팅으로<br>폭발위험 경감, 소화약제 확산 용이</small>
+      </div>
+      <div class="feat">
+        <svg viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="8" rx="1.5"/><circle cx="7" cy="13" r="1"/><circle cx="12" cy="13" r="1"/><circle cx="17" cy="13" r="1"/></svg>
+        <b>4구 멀티탭 커버형</b><small>화재 시 열 차단 및<br>확산 방지 커버 설치</small>
+      </div>
+      <div class="feat">
+        <svg viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="1.5"/><path d="M10 8h4M10 12h4M10 16h4"/></svg>
+        <b>누전 차단 배전함</b><small>과전류·누전 차단기 +<br>전력 공급/차단 타임스위치</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP -->
+  <section class="sec step">
+    <p class="eyebrow center">FIRE PROTECTION PROCESS</p>
+    <h2 class="center">3단계 화재방호 구조</h2>
+    <p class="lead center">FM인증 위험물보관함을 기반으로 설계되어<br>예방부터 차단까지 하나의 흐름으로 작동합니다.</p>
+    <div class="step-wrap">
+      <div class="step-item">
+        <div class="step-num">01</div>
+        <div class="step-body">
+          <b>화재 예방 &amp; 감지</b>
+          <ul>
+            <li>내부 화재 감지 경고 시스템</li>
+            <li>대전방지 코팅으로 폭발위험 경감</li>
+            <li>FM인증 위험물보관함 기반 제작 → 공기순환구조를 갖는 조립식 이중 구조, 자동닫힘 안전도어 적용</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">02</div>
+        <div class="step-body">
+          <b>화재 억제 &amp; 소화</b>
+          <ul>
+            <li>소공간 자동 소화장치</li>
+            <li>타공 선반으로 소화약제 확산 용이</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">03</div>
+        <div class="step-body">
+          <b>화재 격리 &amp; 차단</b>
+          <ul>
+            <li>특허 받은 자동안전도어(SAD, 특허 제10-2168279호)</li>
+            <li>충격 감쇠 구조 적용</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERT -->
+  <section class="sec cert">
+    <p class="eyebrow">CERTIFICATION</p>
+    <h2>방재시험연구원<br>화재 방호 테스트 완료</h2>
+    <p class="lead">배터리 보관함 화재방호 시험과 반자동 도어 닫힘 시험을 거쳐<br>성능기준을 만족한 제품입니다.</p>
+    <table>
+      <thead><tr><th>시험 항목</th><th>시험 결과</th></tr></thead>
+      <tbody>
+        <tr><td>배터리 보관함 화재방호 시험</td><td class="ok">성능기준 만족</td></tr>
+        <tr><td>배터리 보관함 반자동 도어 닫힘 시험</td><td class="ok">성능기준 만족</td></tr>
+      </tbody>
+    </table>
+    <span class="badge">화재 방지 시스템 · 폭발성 제품 보관 · 안전도어 장치 인증</span>
+  </section>
+
+  <!-- LINEUP -->
+  <section class="sec line">
+    <p class="eyebrow">LINE-UP</p>
+    <h2>배터리 보관함<br>사이즈 라인업</h2>
+    <p class="lead">보관할 배터리 수량과 설치 공간에 맞춰<br>소형 · 중형 · 대형 3종 중 선택하실 수 있습니다.</p>
+    <div class="thumbs">
+      <figure class=""><img src="images/S.png" alt="배터리 보관함(소형)"><figcaption>소형</figcaption></figure>
+      <figure class=""><img src="images/M.png" alt="배터리 보관함(중형)"><figcaption>중형</figcaption></figure>
+      <figure class="cur"><img src="images/L.png" alt="배터리 보관함(대형)"><figcaption>대형</figcaption></figure>
+    </div>
+    <div class="line-table-wrap">
+    <table>
+      <thead><tr><th></th><th class="">소형</th><th class="">중형</th><th class="cur">대형</th></tr></thead>
+      <tbody>
+        <tr><td class="h">외측 사이즈(mm)</td><td class="">600×400×700</td><td class="">600×520×1160</td><td class="cur">1100×520×1725</td></tr>
+        <tr><td class="h">내측 사이즈(mm)</td><td class="">490×256×555</td><td class="">490×360×935</td><td class="cur">990×360×1505</td></tr>
+        <tr><td class="h">선반</td><td class="">1EA</td><td class="">2EA</td><td class="cur">3EA</td></tr>
+        <tr><td class="h">무게</td><td class="">52kg</td><td class="">84kg</td><td class="cur">184kg</td></tr>
+        <tr><td class="h">멀티탭</td><td class="">3구 1EA</td><td class="">4구 2EA(커버형)</td><td class="cur">4구 3EA(커버형)</td></tr>
+        <tr><td class="h">배전함</td><td class="">2구 1EA</td><td class="">4구 1EA</td><td class="cur">4구 1EA</td></tr>
+        <tr><td class="h">벽부형</td><td class="">-</td><td class="">2구 2EA</td><td class="cur">2구 3EA</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="g-note" style="margin-top:14px;">※ 전 모델 공통 소화기 용량 3kg</p>
+  </section>
+
+  <!-- SPEC -->
+  <section class="sec spec">
+    <h2>제품 상세정보 — 대형</h2>
+    <table class="spectbl">
+      <tbody>
+        <tr><th>모델명</th><td>배터리 보관함(대형)</td></tr>
+        <tr><th>외측 사이즈(mm)</th><td>1100×520×1725 (W×D×H)</td></tr>
+        <tr><th>내측 사이즈(mm)</th><td>990×360×1505 (W×D×H)</td></tr>
+        <tr><th>무게</th><td>184 kg</td></tr>
+        <tr><th>선반</th><td>3EA</td></tr>
+        <tr><th>멀티탭</th><td>4구 3EA(커버형)</td></tr>
+        <tr><th>배전함</th><td>4구 1EA</td></tr>
+        <tr><th>벽부형</th><td>2구 3EA</td></tr>
+        <tr><th>화재 감지</th><td>연기·열 교차감지 (정온식), 85db 이상 경보음</td></tr>
+        <tr><th>자동 소화장치</th><td>작동온도 145℃, A/B/C급 소화, 소화기 용량 3kg</td></tr>
+        <tr><th>도어 방식</th><td>자동안전도어(SAD, 특허 제10-2168279호), 70℃ 이상 자동 닫힘</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec faq">
+    <h2>자주 묻는 질문</h2>
+    <div class="qa">
+      <p class="q"><i>Q</i> 어떤 배터리를 보관할 수 있나요?</p>
+      <p class="a">화재·폭발 위험이 있는 배터리 및 폭발성 제품을 안전하게 보관할 수 있도록 설계되었습니다.</p>
+    </div>
+    <div class="qa">
+      <p class="q"><i>Q</i> 소화기는 별도로 구매해야 하나요?</p>
+      <p class="a">아니요. 전 모델 공통으로 3kg 용량의 자동소화장치가 기본 탑재되어 있어 별도 구매가 필요 없습니다.</p>
+    </div>
+    <div class="qa">
+      <p class="q"><i>Q</i> 화재감지기 배터리는 따로 충전해야 하나요?</p>
+      <p class="a">아니요. 화재감지기 배터리 수명은 약 10년으로, 별도의 전원 장치 없이 사용하실 수 있습니다.</p>
+    </div>
+  </section>
+
+  <!-- GUIDE -->
+  <section class="sec guide">
+    <div class="ghead">
+      <p class="eyebrow">GUIDE</p>
+      <h2>이용 안내 · A/S</h2>
+    </div>
+    <div class="g-wrap">
+
+      <div class="g-block">
+        <h3>배송 안내</h3>
+        <p style="font-size:14px;color:#555;line-height:1.75;word-break:keep-all;">제주도와 도서지역에 대한 배송/설치비와 설치 현장 사정으로 사다리차/지게차 등의 별도 장비 사용이 필요한 경우 사전 문의 바랍니다.</p>
+      </div>
+
+      <div class="g-block">
+        <h3>교환 / 반품 안내</h3>
+        <h4>교환 및 반품이 가능한 경우</h4>
+        <ul>
+          <li>구매자 단순 변심은 상품 인도일로부터 7일 이내 가능 (반품 배송비 구매자 부담)</li>
+          <li>공급받은 상품이 표시·계약 내용과 다르게 이행된 경우, 상품 인도일로부터 3개월 이내, 그 사실을 안 날로부터 30일 이내 가능 (반품 배송비 판매자 부담)</li>
+        </ul>
+        <h4>교환 및 반품이 불가능한 경우</h4>
+        <ul>
+          <li>구매자에게 책임이 있는 사유로 재화가 멸실되거나 훼손된 경우</li>
+          <li>구매자의 사용 또는 일부 소비로 재화의 가치가 현저히 감소한 경우</li>
+          <li>시간이 지나 다시 판매하기 곤란할 정도로 재화의 가치가 현저히 감소한 경우</li>
+        </ul>
+        <p class="g-note">※ 근거법률: 전자상거래 등에서의 소비자보호에 관한 법률 제17조(청약철회 등) 2항</p>
+      </div>
+
+      <div class="g-block">
+        <h3>A/S · 기술지원 안내</h3>
+        <p style="font-size:14px;color:#333;margin-bottom:6px;">배송·A/S 문의 <span class="g-tel">010-9482-7646</span></p>
+        <p style="font-size:14px;color:#333;margin-bottom:10px;">기술지원 문의 <span class="g-tel">010-4377-6797</span></p>
+        <ul>
+          <li>정상적인 사용 범위 내의 결함(도어 작동, 감지센서, 소화장치 등)에 대해 무상 수리 또는 교환해 드립니다. (1년)</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="foot">
+    <div class="brand">에스원</div>
+    <div>배터리 보관함(대형) · TGS44491</div>
+    <div class="cs">고객센터 1588-3112</div>
+  </footer>
+
+</div>
