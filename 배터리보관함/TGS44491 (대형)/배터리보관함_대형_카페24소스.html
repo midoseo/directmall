@@ -1,256 +1,143 @@
-<!--
-  ============================================================
-  배터리 보관함(대형) (TGS44491) — 카페24 상품 상세설명 삽입용 [v3.1]
-  · 상세설명 에디터 [HTML] 소스 모드에 아래 전체를 붙여넣기
-  · images/ 경로는 웹FTP 업로드 후 실제 경로로 치환
-  · 저장 후 위지윅 모드로 재전환 금지 (style 태그 삭제됨)
-  ============================================================
--->
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
-
-/* ── 원본 디자인 CSS (색상·톤 유지, 폰트크기만 유동화) ── */
-.lucell{max-width:860px;margin:0 auto;font-family:Pretendard,'Noto Sans KR','Apple SD Gothic Neo','맑은 고딕',sans-serif;color:#1a1a1a;line-height:1.65;-webkit-text-size-adjust:100%;letter-spacing:-0.01em;}
-.lucell *{margin:0;padding:0;box-sizing:border-box;}
-.lucell img{display:block;max-width:100%;height:auto;}
-.lucell .eyebrow{font-size:13px;font-size:clamp(12px,1.67cqi,13px);letter-spacing:0.22em;font-weight:700;color:#c0392b;text-transform:uppercase;margin-bottom:18px;}
-.lucell h2{font-size:32px;font-size:clamp(23.7px,4.1cqi,32px);font-weight:800;line-height:1.28;letter-spacing:-0.03em;}
-.lucell .lead{font-size:16px;font-size:clamp(14.1px,2.05cqi,16px);color:#555;margin-top:18px;line-height:1.75;word-break:keep-all;}
-.lucell .sec{padding:80px 34px;}
-.lucell .center{text-align:center;}
+.safe{max-width:860px;margin:0 auto;font-family:Pretendard,'Noto Sans KR','Apple SD Gothic Neo','맑은 고딕',sans-serif;color:#1a1a1a;line-height:1.65;-webkit-text-size-adjust:100%;letter-spacing:-0.01em;}
+.safe *{margin:0;padding:0;box-sizing:border-box;}
+.safe img{display:block;max-width:100%;height:auto;}
+.safe .eyebrow{font-size:13px;letter-spacing:0.22em;font-weight:700;color:#c0392b;text-transform:uppercase;margin-bottom:18px;}
+.safe h2{font-size:32px;font-weight:800;line-height:1.28;letter-spacing:-0.03em;}
+.safe .lead{font-size:16px;color:#555;margin-top:18px;line-height:1.75;word-break:keep-all;}
+.safe .sec{padding:80px 34px;}
+.safe .center{text-align:center;}
 
 /* HERO */
-.lucell .hero{background:#fff;color:#1a1a1a;padding:60px 34px 0;text-align:center;overflow:hidden;}
-.lucell .hero .eyebrow{color:#c0392b;}
-.lucell .hero h1{font-size:44px;font-size:clamp(32.6px,5.64cqi,44px);font-weight:800;line-height:1.26;letter-spacing:-0.03em;margin:0 0 16px;color:#1a1a1a;}
-.lucell .hero .sub{font-size:16px;font-size:clamp(14.1px,2.05cqi,16px);color:#555;letter-spacing:0.02em;}
-.lucell .hero .tags{margin-top:22px;font-size:13px;font-size:clamp(12px,1.67cqi,13px);color:#888;letter-spacing:0.02em;}
-.lucell .hero .tags span{color:#c0392b;}
-.lucell .hero-img{margin:34px auto 0;max-width:380px;background:#fff;padding:24px 24px 10px;}
+.safe .hero{background:#fff;color:#1a1a1a;padding:60px 34px 0;text-align:center;overflow:hidden;}
+.safe .hero .eyebrow{color:#c0392b;}
+.safe .hero h1{font-size:44px;font-weight:800;line-height:1.26;letter-spacing:-0.03em;margin:0 0 16px;color:#1a1a1a;}
+.safe .hero .sub{font-size:16px;color:#555;letter-spacing:0.02em;}
+.safe .hero .tags{margin-top:22px;font-size:13px;color:#888;letter-spacing:0.02em;}
+.safe .hero .tags span{color:#c0392b;}
+.safe .hero-img{margin:34px auto 0;max-width:380px;background:#fff;padding:24px 24px 10px;}
 
 /* INTRO */
-.lucell .intro{background:#fff;text-align:center;}
-.lucell .intro h2{font-size:28px;font-size:clamp(20.7px,3.59cqi,28px);}
-.lucell .quote-en{font-size:13px;font-size:clamp(12px,1.67cqi,13px);letter-spacing:0.16em;color:#c0392b;font-weight:700;margin-top:20px;}
+.safe .intro{background:#fff;text-align:center;}
+.safe .intro h2{font-size:28px;}
+.safe .quote-en{font-size:13px;letter-spacing:0.16em;color:#c0392b;font-weight:700;margin-top:20px;}
 
 /* WHY icons */
-.lucell .why{background:#f5f3ef;}
-.lucell .why h2{text-align:center;margin-bottom:48px;}
-.lucell .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px 18px;}
-.lucell .feat{text-align:center;}
-.lucell .feat svg{width:48px;height:48px;stroke:#1a1a1a;stroke-width:1.4;fill:none;margin:0 auto 14px;}
-.lucell .feat b{display:block;font-size:15.5px;font-size:clamp(14.3px,1.99cqi,15.5px);font-weight:700;}
-.lucell .feat small{display:block;font-size:12.5px;font-size:clamp(11.5px,1.6cqi,12.5px);color:#888;margin-top:5px;line-height:1.5;word-break:keep-all;}
+.safe .why{background:#f5f3ef;}
+.safe .why h2{text-align:center;margin-bottom:48px;}
+.safe .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px 18px;}
+.safe .feat{text-align:center;}
+.safe .feat svg{width:48px;height:48px;stroke:#1a1a1a;stroke-width:1.4;fill:none;margin:0 auto 14px;}
+.safe .feat b{display:block;font-size:15.5px;font-weight:700;}
+.safe .feat small{display:block;font-size:12.5px;color:#888;margin-top:5px;line-height:1.5;word-break:keep-all;}
 
 /* STEP (3단계 화재방호) */
-.lucell .step{background:#fff;}
-.lucell .step h2{text-align:center;margin-bottom:12px;}
-.lucell .step .lead.center{max-width:520px;margin-left:auto;margin-right:auto;}
-.lucell .step-wrap{max-width:640px;margin:44px auto 0;display:flex;flex-direction:column;gap:0;}
-.lucell .step-item{display:flex;gap:18px;padding:22px 0;border-bottom:1px solid #eee;}
-.lucell .step-item:last-child{border-bottom:none;}
-.lucell .step-num{flex:0 0 auto;width:46px;height:46px;border-radius:50%;background:#1a1a1a;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;font-size:clamp(13.8px,1.92cqi,15px);}
-.lucell .step-body b{display:block;font-size:16px;font-size:clamp(14.1px,2.05cqi,16px);font-weight:800;margin-bottom:6px;}
-.lucell .step-body ul{list-style:none;}
-.lucell .step-body li{position:relative;padding:3px 0 3px 13px;font-size:13.5px;font-size:clamp(12.4px,1.73cqi,13.5px);color:#555;line-height:1.6;word-break:keep-all;}
-.lucell .step-body li::before{content:'–';position:absolute;left:0;color:#c0392b;font-weight:700;}
+.safe .step{background:#fff;}
+.safe .step h2{text-align:center;margin-bottom:12px;}
+.safe .step .lead.center{max-width:520px;margin-left:auto;margin-right:auto;}
+.safe .step-wrap{max-width:640px;margin:44px auto 0;display:flex;flex-direction:column;gap:0;}
+.safe .step-item{display:flex;gap:18px;padding:22px 0;border-bottom:1px solid #eee;}
+.safe .step-item:last-child{border-bottom:none;}
+.safe .step-num{flex:0 0 auto;width:46px;height:46px;border-radius:50%;background:#1a1a1a;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;}
+.safe .step-body b{display:block;font-size:16px;font-weight:800;margin-bottom:6px;}
+.safe .step-body ul{list-style:none;}
+.safe .step-body li{position:relative;padding:3px 0 3px 13px;font-size:13.5px;color:#555;line-height:1.6;word-break:keep-all;}
+.safe .step-body li::before{content:'–';position:absolute;left:0;color:#c0392b;font-weight:700;}
 
 /* CERT */
-.lucell .cert{background:#1a1a1a;color:#fff;text-align:center;}
-.lucell .cert .lead{color:#bbb;}
-.lucell .cert .badge{display:inline-block;margin-top:26px;padding:10px 22px;border:1px solid #e0655a;border-radius:40px;color:#e0655a;font-weight:700;font-size:14.5px;font-size:clamp(13.3px,1.86cqi,14.5px);}
-.lucell .cert table{width:100%;max-width:560px;margin:34px auto 0;border-collapse:collapse;font-size:13.5px;font-size:clamp(12.4px,1.73cqi,13.5px);border-top:1.5px solid #444;}
-.lucell .cert th,.lucell .cert td{border-bottom:1px solid #333;padding:12px 10px;text-align:center;color:#ddd;}
-.lucell .cert th{background:#232323;font-weight:700;color:#fff;font-size:13px;font-size:clamp(12px,1.67cqi,13px);}
-.lucell .cert td.ok{color:#7fd18a;font-weight:700;}
+.safe .cert{background:#1a1a1a;color:#fff;text-align:center;}
+.safe .cert .lead{color:#bbb;}
+.safe .cert .badge{display:inline-block;margin-top:26px;padding:10px 22px;border:1px solid #e0655a;border-radius:40px;color:#e0655a;font-weight:700;font-size:14.5px;}
+.safe .cert table{width:100%;max-width:560px;margin:34px auto 0;border-collapse:collapse;font-size:13.5px;border-top:1.5px solid #444;}
+.safe .cert th,.safe .cert td{border-bottom:1px solid #333;padding:12px 10px;text-align:center;color:#ddd;}
+.safe .cert th{background:#232323;font-weight:700;color:#fff;font-size:13px;}
+.safe .cert td.ok{color:#7fd18a;font-weight:700;}
 
 /* LINEUP */
-.lucell .line{background:#f5f3ef;text-align:center;}
-.lucell .line h2{margin-bottom:8px;}
-.lucell .thumbs{display:flex;gap:14px;justify-content:center;margin-top:36px;flex-wrap:wrap;}
-.lucell .thumbs figure{width:30%;min-width:150px;background:#fff;border-radius:12px;padding:16px 8px 12px;border:2px solid transparent;}
-.lucell .thumbs figure.cur{border-color:#c0392b;}
-.lucell .thumbs img{margin:0 auto;max-height:150px;width:auto;}
-.lucell .thumbs figcaption{font-size:12.5px;font-size:clamp(11.5px,1.6cqi,12.5px);color:#888;margin-top:8px;font-weight:600;}
-.lucell .thumbs figure.cur figcaption{color:#c0392b;}
-.lucell .line-table-wrap{overflow-x:auto;margin-top:28px;}
-.lucell .line table{width:100%;min-width:520px;border-collapse:collapse;font-size:13px;font-size:clamp(12px,1.67cqi,13px);border-top:1.5px solid #1a1a1a;background:#fff;}
-.lucell .line th,.lucell .line td{border-bottom:1px solid #eee;padding:11px 8px;text-align:center;}
-.lucell .line th{background:#faf9f7;font-weight:700;color:#333;}
-.lucell .line th.cur,.lucell .line td.cur{background:#fbeceb;color:#c0392b;font-weight:700;}
-.lucell .line td.h{background:#faf9f7;font-weight:600;color:#333;text-align:left;padding-left:14px;}
+.safe .line{background:#f5f3ef;text-align:center;}
+.safe .line h2{margin-bottom:8px;}
+.safe .thumbs{display:flex;gap:14px;justify-content:center;margin-top:36px;flex-wrap:wrap;}
+.safe .thumbs figure{width:30%;min-width:150px;background:#fff;border-radius:12px;padding:16px 8px 12px;border:2px solid transparent;}
+.safe .thumbs figure.cur{border-color:#c0392b;}
+.safe .thumbs img{margin:0 auto;max-height:150px;width:auto;}
+.safe .thumbs figcaption{font-size:12.5px;color:#888;margin-top:8px;font-weight:600;}
+.safe .thumbs figure.cur figcaption{color:#c0392b;}
+.safe .line-table-wrap{overflow-x:auto;margin-top:28px;}
+.safe .line table{width:100%;min-width:520px;border-collapse:collapse;font-size:13px;border-top:1.5px solid #1a1a1a;background:#fff;}
+.safe .line th,.safe .line td{border-bottom:1px solid #eee;padding:11px 8px;text-align:center;}
+.safe .line th{background:#faf9f7;font-weight:700;color:#333;}
+.safe .line th.cur,.safe .line td.cur{background:#fbeceb;color:#c0392b;font-weight:700;}
+.safe .line td.h{background:#faf9f7;font-weight:600;color:#333;text-align:left;padding-left:14px;}
 
 /* SPEC */
-.lucell .spec{background:#fff;padding-top:20px;}
-.lucell .spec h2{text-align:center;margin-bottom:34px;font-size:26px;font-size:clamp(19.2px,3.33cqi,26px);}
-.lucell table.spectbl{width:100%;border-collapse:collapse;font-size:14.5px;font-size:clamp(13.3px,1.86cqi,14.5px);border-top:2px solid #1a1a1a;}
-.lucell .spectbl th,.lucell .spectbl td{border-bottom:1px solid #eee;padding:14px 16px;text-align:left;vertical-align:middle;}
-.lucell .spectbl th{background:#faf9f7;width:34%;color:#333;font-weight:600;white-space:nowrap;}
-.lucell .spectbl td{color:#444;}
+.safe .spec{background:#fff;padding-top:20px;}
+.safe .spec h2{text-align:center;margin-bottom:34px;font-size:26px;}
+.safe table.spectbl{width:100%;border-collapse:collapse;font-size:14.5px;border-top:2px solid #1a1a1a;}
+.safe .spectbl th,.safe .spectbl td{border-bottom:1px solid #eee;padding:14px 16px;text-align:left;vertical-align:middle;}
+.safe .spectbl th{background:#faf9f7;width:34%;color:#333;font-weight:600;white-space:nowrap;}
+.safe .spectbl td{color:#444;}
 
 /* CAUTION checklist */
-.lucell .caution{background:#fbf2f0;}
-.lucell .caution h2{text-align:center;margin-bottom:10px;}
-.lucell .caution .lead.center{max-width:520px;margin-left:auto;margin-right:auto;color:#b23a2e;}
-.lucell .check-list{list-style:none;max-width:640px;margin:36px auto 0;display:flex;flex-direction:column;gap:12px;}
-.lucell .check-list li{display:flex;gap:14px;align-items:flex-start;background:#fff;border-radius:12px;padding:16px 18px;box-shadow:0 2px 10px rgba(0,0,0,.03);}
-.lucell .check-list .chk{flex:0 0 auto;width:22px;height:22px;margin-top:1px;border-radius:6px;border:1.6px solid #c0392b;position:relative;}
-.lucell .check-list .chk::after{content:'';position:absolute;left:5px;top:2px;width:6px;height:11px;border:solid #c0392b;border-width:0 2px 2px 0;transform:rotate(40deg);}
-.lucell .check-list .txt{font-size:14.5px;font-size:clamp(13.3px,1.86cqi,14.5px);color:#333;line-height:1.6;word-break:keep-all;}
-.lucell .check-list .txt b{color:#c0392b;font-weight:700;}
-.lucell .check-list .txt .note{color:#888;font-weight:600;}
+.safe .caution{background:#fbf2f0;}
+.safe .caution h2{text-align:center;margin-bottom:10px;}
+.safe .caution .lead.center{max-width:520px;margin-left:auto;margin-right:auto;color:#b23a2e;}
+.safe .check-list{list-style:none;max-width:640px;margin:36px auto 0;display:flex;flex-direction:column;gap:12px;}
+.safe .check-list li{display:flex;gap:14px;align-items:flex-start;background:#fff;border-radius:12px;padding:16px 18px;box-shadow:0 2px 10px rgba(0,0,0,.03);}
+.safe .check-list .chk{flex:0 0 auto;width:22px;height:22px;margin-top:1px;border-radius:6px;border:1.6px solid #c0392b;position:relative;}
+.safe .check-list .chk::after{content:'';position:absolute;left:5px;top:2px;width:6px;height:11px;border:solid #c0392b;border-width:0 2px 2px 0;transform:rotate(40deg);}
+.safe .check-list .txt{font-size:14.5px;color:#333;line-height:1.6;word-break:keep-all;}
+.safe .check-list .txt b{color:#c0392b;font-weight:700;}
+.safe .check-list .txt .note{color:#888;font-weight:600;}
 
 /* FAQ */
-.lucell .faq{background:#f5f3ef;}
-.lucell .faq h2{text-align:center;margin-bottom:40px;font-size:26px;font-size:clamp(19.2px,3.33cqi,26px);}
-.lucell .qa{max-width:640px;margin:0 auto 20px;}
-.lucell .q{display:flex;gap:12px;background:#fff;border-radius:14px;padding:16px 22px;font-size:15.5px;font-size:clamp(14.3px,1.99cqi,15.5px);font-weight:700;box-shadow:0 2px 10px rgba(0,0,0,.03);}
-.lucell .q i{color:#c0392b;font-style:normal;}
-.lucell .a{font-size:14px;font-size:clamp(12.9px,1.79cqi,14px);color:#666;padding:12px 22px 0;word-break:keep-all;}
+.safe .faq{background:#f5f3ef;}
+.safe .faq h2{text-align:center;margin-bottom:40px;font-size:26px;}
+.safe .qa{max-width:640px;margin:0 auto 20px;}
+.safe .q{display:flex;gap:12px;background:#fff;border-radius:14px;padding:16px 22px;font-size:15.5px;font-weight:700;box-shadow:0 2px 10px rgba(0,0,0,.03);}
+.safe .q i{color:#c0392b;font-style:normal;}
+.safe .a{font-size:14px;color:#666;padding:12px 22px 0;word-break:keep-all;}
 
 /* GUIDE */
-.lucell .guide{background:#fff;}
-.lucell .guide .ghead{text-align:center;margin-bottom:12px;}
-.lucell .guide h2{font-size:24px;font-size:clamp(17.8px,3.08cqi,24px);}
-.lucell .g-wrap{max-width:680px;margin:44px auto 0;}
-.lucell .g-block{margin-bottom:40px;}
-.lucell .g-block h3{font-size:17px;font-size:clamp(15px,2.18cqi,17px);font-weight:800;padding-left:12px;border-left:3px solid #c0392b;margin-bottom:14px;letter-spacing:-0.02em;}
-.lucell .g-block h4{font-size:14px;font-size:clamp(12.9px,1.79cqi,14px);font-weight:700;color:#555;margin:18px 0 8px;}
-.lucell .g-block ul{list-style:none;}
-.lucell .g-block li{position:relative;padding:5px 0 5px 15px;font-size:13.5px;font-size:clamp(12.4px,1.73cqi,13.5px);color:#555;line-height:1.65;word-break:keep-all;}
-.lucell .g-block li::before{content:'–';position:absolute;left:0;color:#c0392b;font-weight:700;}
-.lucell .g-block ol{list-style:none;counter-reset:warranty;}
-.lucell .g-block ol li{padding-left:22px;}
-.lucell .g-block ol li::before{content:counter(warranty) '.';counter-increment:warranty;position:absolute;left:0;color:#c0392b;font-weight:700;}
-.lucell .g-block ol li .g-note{margin-top:2px;}
-.lucell .g-warn{font-size:13px;font-size:clamp(12px,1.67cqi,13px);color:#b23a2e;line-height:1.65;margin-top:16px;background:#fbf2f0;padding:13px 15px;border-radius:8px;word-break:keep-all;}
-.lucell .g-table{width:100%;border-collapse:collapse;font-size:13px;font-size:clamp(12px,1.67cqi,13px);margin-top:8px;border-top:1.5px solid #333;}
-.lucell .g-table th,.lucell .g-table td{border-bottom:1px solid #eee;padding:9px 8px;text-align:center;vertical-align:middle;line-height:1.5;}
-.lucell .g-table th{background:#faf9f7;font-weight:700;color:#333;font-size:12.5px;font-size:clamp(11.5px,1.6cqi,12.5px);}
-.lucell .g-table td{color:#555;}
-.lucell .g-table td.l{text-align:left;}
-.lucell .g-note{font-size:12px;font-size:clamp(11px,1.54cqi,12px);color:#999;margin-top:9px;line-height:1.6;}
-.lucell .g-tel{font-weight:800;color:#b23a2e;font-size:16.5px;font-size:clamp(14.5px,2.12cqi,16.5px);}
-
-
-
+.safe .guide{background:#fff;}
+.safe .guide .ghead{text-align:center;margin-bottom:12px;}
+.safe .guide h2{font-size:24px;}
+.safe .g-wrap{max-width:680px;margin:44px auto 0;}
+.safe .g-block{margin-bottom:40px;}
+.safe .g-block h3{font-size:17px;font-weight:800;padding-left:12px;border-left:3px solid #c0392b;margin-bottom:14px;letter-spacing:-0.02em;}
+.safe .g-block h4{font-size:14px;font-weight:700;color:#555;margin:18px 0 8px;}
+.safe .g-block ul{list-style:none;}
+.safe .g-block li{position:relative;padding:5px 0 5px 15px;font-size:13.5px;color:#555;line-height:1.65;word-break:keep-all;}
+.safe .g-block li::before{content:'–';position:absolute;left:0;color:#c0392b;font-weight:700;}
+.safe .g-block ol{list-style:none;counter-reset:warranty;}
+.safe .g-block ol li{padding-left:22px;}
+.safe .g-block ol li::before{content:counter(warranty) '.';counter-increment:warranty;position:absolute;left:0;color:#c0392b;font-weight:700;}
+.safe .g-block ol li .g-note{margin-top:2px;}
+.safe .g-warn{font-size:13px;color:#b23a2e;line-height:1.65;margin-top:16px;background:#fbf2f0;padding:13px 15px;border-radius:8px;word-break:keep-all;}
+.safe .g-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px;border-top:1.5px solid #333;}
+.safe .g-table th,.safe .g-table td{border-bottom:1px solid #eee;padding:9px 8px;text-align:center;vertical-align:middle;line-height:1.5;}
+.safe .g-table th{background:#faf9f7;font-weight:700;color:#333;font-size:12.5px;}
+.safe .g-table td{color:#555;}
+.safe .g-table td.l{text-align:left;}
+.safe .g-note{font-size:12px;color:#999;margin-top:9px;line-height:1.6;}
+.safe .g-tel{font-weight:800;color:#b23a2e;font-size:16.5px;}
+@media (max-width:560px){.safe .g-table th,.safe .g-table td{padding:7px 5px;font-size:11.5px;}}
 
 /* FOOTER */
-.lucell .foot{background:#141414;color:#cfcfcf;padding:44px 34px;text-align:center;font-size:13px;font-size:clamp(12px,1.67cqi,13px);}
-.lucell .foot .brand{font-size:20px;font-size:clamp(17.6px,2.56cqi,20px);font-weight:800;color:#fff;letter-spacing:0.06em;margin-bottom:14px;}
-.lucell .foot .cs{color:#e0655a;font-weight:700;font-size:15px;font-size:clamp(13.8px,1.92cqi,15px);margin:10px 0;}
+.safe .foot{background:#141414;color:#cfcfcf;padding:44px 34px;text-align:center;font-size:13px;}
+.safe .foot .brand{font-size:20px;font-weight:800;color:#fff;letter-spacing:0.06em;margin-bottom:14px;}
+.safe .foot .cs{color:#e0655a;font-weight:700;font-size:15px;margin:10px 0;}
 
-/* ═══════════════════════════════════════════════════════════════════
-   [v3.1] 카페24 상세설명 대응 — 컨테이너 쿼리 전환 + 스킨 CSS 방어
-   · 뷰포트(화면 폭)가 아니라 삽입된 컬럼 폭에 반응
-   · 아래는 위 원본 CSS를 덮어쓰는 오버라이드 (선언 순서 유지 필수)
-   ═══════════════════════════════════════════════════════════════════ */
-
-/* 1) 컨테이너 선언 — 이 파일의 핵심 */
-.lucell{
-  container-type:inline-size;
-  container-name:lud;
-  display:block;
-  width:100%;
-  max-width:860px;
-  margin:0 auto;
-  font-size:16px;
-  text-align:left;
-  word-break:keep-all;
-  overflow-wrap:anywhere;
-  -webkit-text-size-adjust:100%;
-  text-size-adjust:100%;
-}
-
-/* 2) 스킨 CSS 방어 */
-.lucell *,.lucell *::before,.lucell *::after{box-sizing:border-box !important;}
-.lucell *{font-family:inherit;}
-.lucell img{display:block !important;max-width:100% !important;height:auto !important;border:0;}
-.lucell table{width:100% !important;max-width:100% !important;border-collapse:collapse;background:none;}
-.lucell p,.lucell li,.lucell h1,.lucell h2,.lucell h3,.lucell h4{
-  word-break:keep-all;overflow-wrap:anywhere;}
-/* 표 셀은 반드시 break-word.
-   anywhere를 쓰면 min-content 폭이 1글자가 되어 열이 세로로 붕괴한다. */
-.lucell th,.lucell td{word-break:keep-all;overflow-wrap:break-word;}
-.lucell th{white-space:nowrap;}   /* 원본 동작 유지 — 좁은 컨테이너에서만 해제 */
-.lucell ul,.lucell ol{list-style:none;}
-
-/* 3) 아이콘 그리드 — 미디어쿼리 없이 폭에 따라 3열→2열→1열 */
-.lucell .grid{
-  display:grid !important;
-  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-  gap:clamp(26px,4.5cqi,44px) clamp(10px,2cqi,20px);
-  justify-content:center;
-}
-.lucell .feat{flex:initial;min-width:0;text-align:center;}
-.lucell .feat svg{width:clamp(38px,6cqi,52px);height:clamp(38px,6cqi,52px);margin:0 auto 14px;display:block;}
-
-/* 4) 썸네일 — 고정 % 폭 제거, 유동 배치 */
-.lucell .thumbs{display:flex;flex-wrap:wrap;justify-content:center;}
-.lucell .thumbs figure{flex:1 1 200px;width:auto;min-width:0;max-width:330px;}
-.lucell .parts .thumbs figure{flex:1 1 130px;width:auto;min-width:0;max-width:200px;}
-.lucell .holder .thumbs figure{flex:1 1 220px;width:auto;min-width:0;max-width:300px;}
-
-/* 5) 콜아웃 다이어그램 */
-.lucell .clabel{font-size:clamp(9.5px,1.6cqi,12.5px);white-space:normal;}
-.lucell .art-diagram{max-width:100%;}
-
-
-/* 7) 이미지 개별 크기·위치 캡 재선언 */
-.lucell .hero-img{max-width:380px !important;}
-
-/* 6) 컨테이너 폭별 여백/레이아웃 전환 (화면 폭 아님) */
-@container lud (max-width:620px){
-  .lucell .sec{padding:56px 22px;}
-  .lucell .hero{padding:48px 22px 0;}
-  .lucell .foot{padding:36px 22px;}
-  .lucell .fire{padding-top:56px;}
-  .lucell .fire .fire-txt{padding:0 22px;}
-  .lucell .life .overlay{padding:24px 22px 26px;}
-  .lucell .g-table th,.lucell .g-table td{padding:7px 4px;}
-  .lucell table{table-layout:fixed;}
-  .lucell th{white-space:normal;}
-  .lucell .q{padding:14px 16px;}
-  .lucell .a{padding:12px 16px 0;}
-}
-@container lud (max-width:460px){
-  .lucell .sec{padding:44px 16px;}
-  .lucell .hero{padding:40px 16px 0;}
-  .lucell .foot{padding:30px 16px;}
-  .lucell .fire .fire-txt{padding:0 16px;}
-  .lucell .life .overlay{position:static;background:#1a1a1a;padding:22px 16px 26px;}
-  .lucell .art-diagram{aspect-ratio:auto;}
-}
-@container lud (max-width:330px){
-  .lucell .grid{grid-template-columns:1fr;}
-}
-
-
-/* 8) 원본 @media → @container 전환 */
-@container lud (max-width:560px){.lucell .g-table th,.lucell .g-table td{padding:7px 5px;font-size:11.5px;}}
-@container lud (max-width:560px){
-  .lucell .sec{padding:56px 22px;}
-  .lucell h2{font-size:25px;}
-  .lucell .hero h1{font-size:32px;}
-  .lucell .grid{grid-template-columns:repeat(2,1fr);gap:32px 12px;}
-  .lucell .thumbs figure{width:100%;}
-  .lucell th,.lucell td{padding:11px 10px;font-size:13px;}
-}
-
-/* 9) 컨테이너 쿼리 미지원 브라우저 폴백 */
-@supports not (container-type:inline-size){
-@media (max-width:560px){.lucell .g-table th,.lucell .g-table td{padding:7px 5px;font-size:11.5px;}}
 @media (max-width:560px){
-  .lucell .sec{padding:56px 22px;}
-  .lucell h2{font-size:25px;}
-  .lucell .hero h1{font-size:32px;}
-  .lucell .grid{grid-template-columns:repeat(2,1fr);gap:32px 12px;}
-  .lucell .thumbs figure{width:100%;}
-  .lucell th,.lucell td{padding:11px 10px;font-size:13px;}
-}
+  .safe .sec{padding:56px 22px;}
+  .safe h2{font-size:25px;}
+  .safe .hero h1{font-size:32px;}
+  .safe .grid{grid-template-columns:repeat(2,1fr);gap:32px 12px;}
+  .safe .thumbs figure{width:100%;}
+  .safe th,.safe td{padding:11px 10px;font-size:13px;}
 }
 </style>
-<div class="lucell">
+<div class="safe">
 
   <!-- HERO -->
   <section class="hero">
