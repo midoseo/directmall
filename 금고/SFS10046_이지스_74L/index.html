@@ -1,0 +1,465 @@
+<!--
+  ============================================================
+  이지스 74L (SFS10046) — 카페24 상품 상세설명 삽입용 [v3.1]
+  · 상세설명 에디터 [HTML] 소스 모드에 아래 전체를 붙여넣기
+  · images/ 경로는 웹FTP 업로드 후 실제 경로로 치환
+  · 저장 후 위지윅 모드로 재전환 금지 (style 태그 삭제됨)
+  ============================================================
+-->
+<style>
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+
+/* ── 원본 디자인 CSS (색상·톤 그대로 유지, 폰트크기만 유동화) ── */
+.lucell{max-width:860px;margin:0 auto;font-family:Pretendard,'Noto Sans KR','Apple SD Gothic Neo','맑은 고딕',sans-serif;color:#1a1a1a;line-height:1.65;-webkit-text-size-adjust:100%;letter-spacing:-0.01em;}
+.lucell *{margin:0;padding:0;box-sizing:border-box;}
+.lucell img{display:block;max-width:100%;height:auto;}
+.lucell .eyebrow{font-size:13px;font-size:clamp(12px,1.67cqi,13px);letter-spacing:0.22em;font-weight:700;color:#4a5a70;text-transform:uppercase;margin-bottom:18px;}
+.lucell h2{font-size:34px;font-size:clamp(25.2px,4.36cqi,34px);font-weight:800;line-height:1.28;letter-spacing:-0.03em;}
+.lucell .lead{font-size:16px;font-size:clamp(14.1px,2.05cqi,16px);color:#555;margin-top:18px;line-height:1.75;word-break:keep-all;}
+.lucell .sec{padding:84px 34px;}
+.lucell .center{text-align:center;}
+
+/* HERO */
+.lucell .hero{background:#fff;color:#1a1a1a;padding:70px 34px 0;text-align:center;overflow:hidden;}
+.lucell .hero .eyebrow{color:#6a7d99;}
+.lucell .hero h1{font-size:48px;font-size:clamp(35.5px,6.15cqi,48px);font-weight:800;line-height:1.22;letter-spacing:-0.04em;margin:0 0 16px;}
+.lucell .hero .sub{font-size:16px;font-size:clamp(14.1px,2.05cqi,16px);color:#666;letter-spacing:0.02em;}
+.lucell .hero .tags{margin-top:22px;font-size:13px;font-size:clamp(12px,1.67cqi,13px);color:#999;letter-spacing:0.04em;}
+.lucell .hero .tags span{color:#6a7d99;}
+.lucell .hero-img{margin:34px auto 0;max-width:600px;}
+
+/* INTRO */
+.lucell .intro{background:#fff;text-align:center;}
+.lucell .intro h2{font-size:30px;font-size:clamp(22.2px,3.85cqi,30px);}
+.lucell .quote-en{font-size:14px;font-size:clamp(12.9px,1.79cqi,14px);letter-spacing:0.18em;color:#4a5a70;font-weight:600;margin-top:20px;}
+
+/* WHY icons */
+.lucell .why{background:#f5f3ef;}
+.lucell .why h2{text-align:center;margin-bottom:52px;}
+.lucell .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:44px 20px;}
+.lucell .feat{text-align:center;}
+.lucell .feat svg{width:52px;height:52px;stroke:#1a1a1a;stroke-width:1.4;fill:none;margin:0 auto 16px;}
+.lucell .feat b{display:block;font-size:16px;font-size:clamp(14.1px,2.05cqi,16px);font-weight:700;}
+.lucell .feat small{display:block;font-size:13px;font-size:clamp(12px,1.67cqi,13px);color:#888;margin-top:5px;}
+
+/* ART */
+.lucell .art{background:#fff;text-align:center;}
+.lucell .art .art-img{max-width:400px;margin:40px auto 0;}
+
+/* LIFESTYLE full-bleed */
+.lucell .life{position:relative;color:#fff;padding:0;}
+.lucell .life img{width:100%;}
+.lucell .life .overlay{position:absolute;left:0;right:0;bottom:0;padding:40px 34px 44px;background:linear-gradient(to top,rgba(0,0,0,.72),rgba(0,0,0,0));}
+.lucell .life h2{font-size:30px;font-size:clamp(22.2px,3.85cqi,30px);}
+.lucell .life .lead{color:#e6e6e6;}
+
+/* FINGERPRINT dark */
+.lucell .fp{background:#1a1a1a;color:#fff;text-align:center;}
+.lucell .fp .lead{color:#b9b9b9;}
+.lucell .fp .fp-img{margin:40px auto 0;max-width:560px;border-radius:10px;overflow:hidden;}
+
+/* FIRE (full-bleed image) */
+.lucell .fire{background:#f5f3ef;text-align:center;padding:84px 0 0;}
+.lucell .fire .fire-txt{padding:0 34px;}
+.lucell .fire .fire-img{width:100%;max-width:none;margin-top:44px;display:block;}
+.lucell .badge{display:inline-block;margin-top:26px;padding:10px 22px;border:1px solid #4a5a70;border-radius:40px;color:#4a5a70;font-weight:700;font-size:15px;font-size:clamp(13.8px,1.92cqi,15px);}
+
+/* LINEUP */
+.lucell .line{background:#fff;text-align:center;}
+.lucell .thumbs{display:flex;gap:18px;justify-content:center;margin-top:40px;flex-wrap:wrap;}
+.lucell .thumbs figure{width:46%;max-width:330px;background:#f5f3ef;border-radius:12px;padding:18px 10px 12px;}
+.lucell .thumbs img{margin:0 auto;max-height:300px;width:auto;}
+.lucell .thumbs figcaption{font-size:13px;font-size:clamp(12px,1.67cqi,13px);color:#888;margin-top:10px;}
+
+/* SPEC */
+.lucell .spec{background:#fff;padding-top:20px;}
+.lucell .spec h2{text-align:center;margin-bottom:34px;font-size:28px;font-size:clamp(20.7px,3.59cqi,28px);}
+.lucell table{width:100%;border-collapse:collapse;font-size:15px;font-size:clamp(13.8px,1.92cqi,15px);border-top:2px solid #1a1a1a;}
+.lucell th,.lucell td{border-bottom:1px solid #eee;padding:15px 16px;text-align:left;vertical-align:middle;}
+.lucell th{background:#faf9f7;width:34%;color:#333;font-weight:600;white-space:nowrap;}
+.lucell td{color:#444;}
+.lucell .ph{color:#4a5a70;font-size:12px;font-size:clamp(11px,1.54cqi,12px);font-weight:600;}
+
+/* FAQ */
+.lucell .faq{background:#f5f3ef;}
+.lucell .faq h2{text-align:center;margin-bottom:44px;font-size:28px;font-size:clamp(20.7px,3.59cqi,28px);}
+.lucell .qa{max-width:640px;margin:0 auto 22px;}
+.lucell .q{display:flex;gap:12px;background:#fff;border-radius:14px;padding:16px 22px;font-size:16px;font-size:clamp(14.1px,2.05cqi,16px);font-weight:700;box-shadow:0 2px 10px rgba(0,0,0,.03);}
+.lucell .q i{color:#4a5a70;font-style:normal;}
+.lucell .a{font-size:14.5px;font-size:clamp(13.3px,1.86cqi,14.5px);color:#666;padding:12px 22px 0;}
+
+/* DELIVERY */
+.lucell .ship{background:#fff;}
+.lucell .ship h2{font-size:22px;font-size:clamp(19.4px,2.82cqi,22px);margin-bottom:18px;text-align:center;}
+.lucell .ship ul{list-style:none;max-width:620px;margin:0 auto;}
+.lucell .ship li{position:relative;padding:8px 0 8px 18px;font-size:14px;font-size:clamp(12.9px,1.79cqi,14px);color:#555;border-bottom:1px dashed #eee;}
+.lucell .ship li::before{content:'';position:absolute;left:0;top:16px;width:5px;height:5px;border-radius:50%;background:#4a5a70;}
+
+/* GUIDE (배송·설치·교환/반품·A/S) */
+.lucell .guide{background:#fff;}
+.lucell .guide .ghead{text-align:center;margin-bottom:12px;}
+.lucell .guide h2{font-size:26px;font-size:clamp(19.2px,3.33cqi,26px);}
+.lucell .g-wrap{max-width:680px;margin:44px auto 0;}
+.lucell .g-block{margin-bottom:40px;}
+.lucell .g-block h3{font-size:18px;font-size:clamp(15.8px,2.31cqi,18px);font-weight:800;padding-left:12px;border-left:3px solid #4a5a70;margin-bottom:14px;letter-spacing:-0.02em;}
+.lucell .g-block h4{font-size:14px;font-size:clamp(12.9px,1.79cqi,14px);font-weight:700;color:#555;margin:18px 0 8px;}
+.lucell .g-block ul{list-style:none;}
+.lucell .g-block li{position:relative;padding:5px 0 5px 15px;font-size:13.5px;font-size:clamp(12.4px,1.73cqi,13.5px);color:#555;line-height:1.65;word-break:keep-all;}
+.lucell .g-block li::before{content:'–';position:absolute;left:0;color:#4a5a70;font-weight:700;}
+.lucell .g-warn{font-size:13px;font-size:clamp(12px,1.67cqi,13px);color:#b23a2e;line-height:1.65;margin-top:16px;background:#fbf2f0;padding:13px 15px;border-radius:8px;word-break:keep-all;}
+.lucell .g-table{width:100%;border-collapse:collapse;font-size:13px;font-size:clamp(12px,1.67cqi,13px);margin-top:8px;border-top:1.5px solid #333;}
+.lucell .g-table th,.lucell .g-table td{border-bottom:1px solid #eee;padding:9px 8px;text-align:center;vertical-align:middle;line-height:1.5;}
+.lucell .g-table th{background:#faf9f7;font-weight:700;color:#333;font-size:12.5px;font-size:clamp(11.5px,1.6cqi,12.5px);}
+.lucell .g-table td{color:#555;}
+.lucell .g-table td.l{text-align:left;}
+.lucell .g-note{font-size:12px;font-size:clamp(11px,1.54cqi,12px);color:#999;margin-top:9px;line-height:1.6;}
+.lucell .g-tel{font-weight:800;color:#b23a2e;font-size:17px;font-size:clamp(15px,2.18cqi,17px);}
+
+
+
+
+/* FOOTER */
+.lucell .foot{background:#141414;color:#cfcfcf;padding:44px 34px;text-align:center;font-size:13px;font-size:clamp(12px,1.67cqi,13px);}
+.lucell .foot .brand{font-size:18px;font-size:clamp(15.8px,2.31cqi,18px);font-weight:800;color:#fff;letter-spacing:0.04em;margin-bottom:14px;}
+.lucell .foot .cs{color:#6a7d99;font-weight:700;font-size:15px;font-size:clamp(13.8px,1.92cqi,15px);margin:10px 0;}
+
+/* ═══════════════════════════════════════════════════════════════════
+   [v3.1] 카페24 상세설명 대응 — 컨테이너 쿼리 전환 + 스킨 CSS 방어
+   · 뷰포트(화면 폭)가 아니라 삽입된 컬럼 폭에 반응합니다
+   · 아래 블록은 위 원본 CSS를 덮어쓰는 오버라이드입니다 (순서 유지 필수)
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* 1) 컨테이너 선언 — 이 파일의 핵심 */
+.lucell{
+  container-type:inline-size;
+  container-name:lud;
+  display:block;
+  width:100%;
+  max-width:860px;
+  margin:0 auto;
+  font-size:16px;
+  text-align:left;
+  word-break:keep-all;
+  overflow-wrap:anywhere;
+  -webkit-text-size-adjust:100%;
+  text-size-adjust:100%;
+}
+
+/* 2) 스킨 CSS 방어 */
+.lucell *,.lucell *::before,.lucell *::after{box-sizing:border-box !important;}
+.lucell *{font-family:inherit;}
+.lucell img{display:block !important;max-width:100% !important;height:auto !important;border:0;}
+.lucell table{width:100% !important;max-width:100% !important;border-collapse:collapse;background:none;}
+.lucell p,.lucell li,.lucell h1,.lucell h2,.lucell h3,.lucell h4{
+  word-break:keep-all;overflow-wrap:anywhere;}
+/* 표 셀: overflow-wrap은 break-word 사용.
+   anywhere를 쓰면 min-content 폭이 1글자가 되어 열이 세로로 붕괴함 */
+.lucell th,.lucell td{word-break:keep-all;overflow-wrap:break-word;}
+.lucell th{white-space:nowrap;}   /* 원본 동작 유지 — 좁은 컨테이너에서만 해제 */
+.lucell ul,.lucell ol{list-style:none;}
+
+/* 3) 아이콘 그리드 — 미디어쿼리 없이 폭에 따라 3열→2열→1열 */
+.lucell .grid{
+  display:grid !important;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:clamp(26px,4.5cqi,44px) clamp(10px,2cqi,20px);
+  justify-content:center;
+}
+.lucell .feat{flex:initial;min-width:0;text-align:center;}
+.lucell .feat svg{width:clamp(38px,6cqi,52px);height:clamp(38px,6cqi,52px);margin:0 auto 14px;display:block;}
+
+/* 4) 썸네일 — 고정 % 폭 제거, 유동 배치 */
+.lucell .thumbs{display:flex;flex-wrap:wrap;justify-content:center;}
+.lucell .thumbs figure{flex:1 1 200px;width:auto;min-width:0;max-width:330px;}
+.lucell .parts .thumbs figure{flex:1 1 130px;width:auto;min-width:0;max-width:200px;}
+.lucell .holder .thumbs figure{flex:1 1 220px;width:auto;min-width:0;max-width:300px;}
+
+/* 5) 콜아웃 다이어그램 — 컨테이너 축소 시 라벨 축소 */
+.lucell .clabel{font-size:clamp(9.5px,1.6cqi,12.5px);white-space:normal;}
+.lucell .art-diagram{max-width:100%;}
+
+
+/* 7) 이미지 개별 크기·위치 캡 (방어 규칙에 덮이지 않도록 재선언) */
+.lucell .hero-img{max-width:600px !important;}
+.lucell .art .art-img{max-width:400px !important;}
+.lucell .fire .fire-img{width:100% !important;max-width:none !important;}
+
+/* 6) 컨테이너 폭별 여백/레이아웃 전환 (화면 폭 아님) */
+@container lud (max-width:620px){
+  .lucell .sec{padding:56px 22px;}
+  .lucell .hero{padding:48px 22px 0;}
+  .lucell .foot{padding:36px 22px;}
+  .lucell .fire{padding-top:56px;}
+  .lucell .fire .fire-txt{padding:0 22px;}
+  .lucell .life .overlay{padding:24px 22px 26px;}
+  .lucell .g-table th,.lucell .g-table td{padding:7px 4px;}
+  .lucell table{table-layout:fixed;}
+  .lucell th{white-space:normal;}
+  .lucell .q{padding:14px 16px;}
+  .lucell .a{padding:12px 16px 0;}
+}
+@container lud (max-width:460px){
+  .lucell .sec{padding:44px 16px;}
+  .lucell .hero{padding:40px 16px 0;}
+  .lucell .foot{padding:30px 16px;}
+  .lucell .fire .fire-txt{padding:0 16px;}
+  .lucell .life .overlay{position:static;background:#1a1a1a;padding:22px 16px 26px;}
+  .lucell .art-diagram{aspect-ratio:auto;}
+}
+@container lud (max-width:330px){
+  .lucell .grid{grid-template-columns:1fr;}
+}
+
+
+/* 8) 원본 반응형 분기 → 컨테이너 쿼리로 전환 */
+@container lud (max-width:560px){.lucell .g-table th,.lucell .g-table td{padding:7px 5px;font-size:11.5px;}}
+@container lud (max-width:560px){
+  .lucell .sec{padding:60px 22px;}
+  .lucell .fire{padding-top:60px;}
+  .lucell .fire .fire-txt{padding:0 22px;}
+  .lucell h2{font-size:27px;}
+  .lucell .hero h1{font-size:36px;}
+  .lucell .grid{gap:36px 12px;}
+  .lucell .thumbs figure{width:100%;}
+  .lucell th,.lucell td{padding:12px 12px;font-size:13.5px;}
+}
+
+/* 9) 컨테이너 쿼리 미지원(구형) 브라우저 폴백 */
+@supports not (container-type:inline-size){
+@media (max-width:560px){.lucell .g-table th,.lucell .g-table td{padding:7px 5px;font-size:11.5px;}}
+@media (max-width:560px){
+  .lucell .sec{padding:60px 22px;}
+  .lucell .fire{padding-top:60px;}
+  .lucell .fire .fire-txt{padding:0 22px;}
+  .lucell h2{font-size:27px;}
+  .lucell .hero h1{font-size:36px;}
+  .lucell .grid{gap:36px 12px;}
+  .lucell .thumbs figure{width:100%;}
+  .lucell th,.lucell td{padding:12px 12px;font-size:13.5px;}
+}
+}
+</style>
+<div class="lucell">
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="eyebrow">AEGIS · 프리미엄 사무용 금고</p>
+    <h1>모던한 디자인,<br>완벽한 보안</h1>
+    <p class="sub">AEGIS 74L · 지문인식 사무용 금고</p>
+    <p class="tags">다양한 도어컬러 &nbsp;<span>·</span>&nbsp; 1시간 내화 &nbsp;<span>·</span>&nbsp; 지문＋비밀번호 이중 잠금</p>
+    <img class="hero-img" src="images/hero.jpg" width="774" height="832" alt="이지스 74L 프리미엄 사무용 금고 정면">
+  </section>
+
+  <!-- INTRO -->
+  <section class="sec intro">
+    <h2>고품격 디자인,<br>편리한 기능</h2>
+    <p class="lead">세계가 인정한 기술력으로 완성한 프리미엄 사무용 금고.<br>모던하고 세련된 디자인에 강력한 보안을 담았습니다.</p>
+    <p class="quote-en">DESIGN MEETS SECURITY</p>
+  </section>
+
+  <!-- WHY -->
+  <section class="sec why">
+    <h2>왜, 이지스일까요?</h2>
+    <div class="grid">
+      <div class="feat">
+        <svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 0-5 5v3M7 10a5 5 0 0 1 10 0c0 4-2 7-2 10M9 21c.5-2 .8-4 .8-6M12 12v4"/></svg>
+        <b>1초 지문인식</b><small>등록 지문으로 빠른 개폐</small>
+      </div>
+      <div class="feat">
+        <svg viewBox="0 0 24 24"><path d="M12 2c1 4-2 5-2 8a4 4 0 0 0 8 0c0-1-.3-2-1-3 .3 3-2 3-2 1 0-3-1-5-3-6zM7 13a5 5 0 0 0 10 3"/></svg>
+        <b>1시간 내화</b><small>화재에도 자산 보호</small>
+      </div>
+      <div class="feat">
+        <svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v2"/></svg>
+        <b>강화된 방도성능</b><small>6개의 28mm 빗장알</small>
+      </div>
+      <div class="feat">
+        <svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M6 11a6 6 0 0 0 12 0M12 17v4M9 21h6"/></svg>
+        <b>음성안내 기능</b><small>상태·조작 음성 안내</small>
+      </div>
+      <div class="feat">
+        <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18c1.6 0 2-1.3 1.2-2.2-.8-.9-.4-2.3.9-2.3H17a4 4 0 0 0 4-4c0-4.9-4-7.5-9-7.5z"/><circle cx="7.5" cy="11" r="1"/><circle cx="12" cy="7.3" r="1"/><circle cx="16.5" cy="11" r="1"/></svg>
+        <b>다양한 도어컬러</b><small>화이트·블랙·레드·우드 4종</small>
+      </div>
+      <div class="feat">
+        <svg viewBox="0 0 24 24"><path d="M12 3a5 5 0 0 0-5 5c0 5-2 6-2 6h14s-2-1-2-6a5 5 0 0 0-5-5z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>
+        <b>충격경보</b><small>움직임·충격 시 120dB 경보음</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- ART -->
+  <section class="sec art">
+    <p class="eyebrow">ART DOOR</p>
+    <h2>모던하고<br>세련된 디자인</h2>
+    <p class="lead">군더더기 없는 실루엣과 고급스러운 마감으로<br>사무 공간의 품격을 높입니다.</p>
+    <img class="art-img" src="images/front.png" width="1000" height="1454" alt="이지스 74 모던 디자인 정면 클로즈업">
+  </section>
+
+  <!-- LIFESTYLE -->
+  <section class="life">
+    <img src="images/lineup.jpg" width="1200" height="520" alt="이지스 금고 다양한 도어 컬러 라인업">
+    <div class="overlay">
+      <h2>다양한 도어컬러</h2>
+      <p class="lead">화이트 · 블랙 · 레드 · 우드 &mdash; 4종 중 선택하세요.</p>
+    </div>
+  </section>
+
+  <!-- FINGERPRINT -->
+  <section class="sec fp">
+    <p class="eyebrow">SECURITY</p>
+    <h2>1초, 지문으로 열다</h2>
+    <p class="lead">등록된 지문으로 빠르게 개폐하고,<br>지문＋비밀번호 이중 인증으로 보안을 강화했습니다.</p>
+    <svg viewBox="0 0 48 60" fill="none" stroke="#6a7d99" stroke-width="1.3" stroke-linecap="round" style="width:90px;height:90px;margin:36px auto 0;display:block;"><path d="M24 6a14 14 0 0 0-14 14v8M10 20a14 14 0 0 1 28 0c0 10-5 18-5 26M16 30a20 20 0 0 0 .4 22M24 26v18M31 24c1 4 1 8 1 12 0 6-2 10-2 16"/></svg>
+  </section>
+
+  <!-- FIRE -->
+  <section class="fire">
+    <div class="fire-txt">
+      <p class="eyebrow">FIRE RESISTANCE</p>
+      <h2>화재에도 지키다</h2>
+      <p class="lead">외부온도 <b>927℃</b>에서 <b>1시간</b> 동안 금고 내부온도를 <b>177℃ 이하</b>로 유지해<br>종이 문서 등이 타지 않도록 보호합니다.</p>
+      <span class="badge">1H FIRE PROTECTION</span>
+    </div>
+    <img class="fire-img" src="images/fire.jpg" width="1200" height="640" alt="화재 속에서도 내부 자산을 보호하는 이지스 금고">
+  </section>
+
+  <!-- SPEC -->
+  <section class="sec spec">
+    <h2>제품 상세정보</h2>
+    <table>
+      <tbody>
+        <tr><th>모델명</th><td>이지스 74L</td></tr>
+        <tr><th>용량</th><td>74L</td></tr>
+        <tr><th>내부 사이즈</th><td>539(H) × 397(W) × 344(D) mm</td></tr>
+        <tr><th>외부 사이즈</th><td>768(H) × 552(W) × 549(D) mm</td></tr>
+        <tr><th>무게</th><td>129 kg</td></tr>
+        <tr><th>잠금방식</th><td>지문 인식 ＋ 비밀번호 (이중 인증)</td></tr>
+        <tr><th>내화 성능</th><td>1시간 내화 (외부 927℃ / 내부 177℃ 이하 유지)</td></tr>
+        <tr><th>도어 디자인</th><td>모던 디자인 · 화이트 / 블랙 / 레드 / 우드 4종 택1</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec faq">
+    <h2>자주 묻는 질문</h2>
+    <div class="qa">
+      <p class="q"><i>Q</i> 지문은 몇 명까지 등록되나요?</p>
+      <p class="a">최대 10명까지 등록 가능하며, 지문 외에 비밀번호로도 개폐할 수 있습니다.</p>
+    </div>
+    <div class="qa">
+      <p class="q"><i>Q</i> 설치·배송은 어떻게 진행되나요?</p>
+      <p class="a">전문 기사 방문 설치로 배송되며, 계단 이동이 필요한 경우 층수에 따라 추가 비용이 발생할 수 있습니다.</p>
+    </div>
+    <div class="qa">
+      <p class="q"><i>Q</i> A/S 보증 기간은 어떻게 되나요?</p>
+      <p class="a">구입년도 포함 1년 무상 보증이며, 사용자 과실(비밀번호 분실 등)의 경우 유상 처리됩니다.</p>
+    </div>
+  </section>
+
+  <!-- GUIDE (배송·설치·교환/반품·A/S) -->
+  <section class="sec guide">
+    <div class="ghead">
+      <p class="eyebrow">GUIDE</p>
+      <h2>배송 · 설치 · 교환/반품 · A/S 안내</h2>
+    </div>
+    <div class="g-wrap">
+
+      <div class="g-block">
+        <h3>배송 안내</h3>
+        <ul>
+          <li>전국 무료 배송입니다.</li>
+          <li>배송은 전문 배송 기사들의 책임하에 안전하고 신속하게 설치해 드립니다.</li>
+          <li>단, 63kg 이하 제품(메타큐브)은 택배 배송이 기본이며, 배송 설치를 원할 시 배송비가 추가됩니다.</li>
+          <li>배송시간: 월~금 09:00~17:00 / 토·일요일 및 공휴일 휴무</li>
+          <li>100kg 이상 중/대형 금고는 지역에 따라 배송기간이 25일 이상 소요될 수 있습니다.</li>
+          <li>배송기간: 수도권 15일, 지방 21일 (주말·공휴일 제외한 영업일 기준)</li>
+          <li>주문 시 페이지 하단 [배송안내]를 꼭 확인 후 주문하세요.</li>
+        </ul>
+        <h4>배송안내 (상세)</h4>
+        <ul>
+          <li>택배 상품은 배송일·시간 지정 요청이 불가합니다.</li>
+          <li>일부 도서 지역은 제외될 수 있으며, 추가 배송비가 부담될 수 있으니 반드시 판매처에 문의 바랍니다.</li>
+          <li>2층 이상의 계단을 이용한 배송은 제품 무게별로 별도 계단비용이 추가되오니 판매처에 확인 바랍니다.</li>
+          <li>1, 2층의 경우에도 입구가 협소하거나 현장상황이 어려울 때 별도비용이 발생될 수 있습니다.</li>
+          <li>인천 영종도 통행료의 경우에는 고객님 별도부담입니다.</li>
+          <li>배송 시 필요한 장비(사다리차, 크레인) 및 엘리베이터 사용료 등은 별도비용입니다.</li>
+          <li>장비를 사용할 수 없는 배송지의 경우 추가인력 투입 시 추가비용이 발생할 수 있습니다.</li>
+          <li>장비(사다리차, 크레인) 사용이 필요한 경우 &mdash; ① 엘리베이터 이용/진입 불가 ② 설치 공간 진입(현관·방문) 불가 ③ 설치환경에 따라 장비사용 상황 발생 가능</li>
+        </ul>
+        <p class="g-warn">⚠ 금고는 고가의 주문 제작 상품입니다. 출고 완료 후 배송 출발 해피콜 또는 안내문자를 받으신 이후에 고객님의 사정으로 배송연기 또는 구매취소의 경우에는 배송비용이 부과될 수 있으니 유의하시기 바랍니다.</p>
+      </div>
+
+      <div class="g-block">
+        <h3>설치 비용 <span style="font-size:12px;color:#999;font-weight:600;">(VAT 별도)</span></h3>
+        <table class="g-table">
+          <thead><tr><th style="width:34%">구분</th><th style="width:33%">설치방법</th><th style="width:33%">비용</th></tr></thead>
+          <tbody>
+            <tr><td>1층</td><td>인력운반</td><td>무상</td></tr>
+            <tr><td rowspan="4">2~3층</td><td>인력운반</td><td>모델별 상이</td></tr>
+            <tr><td>지게차</td><td>5만원</td></tr>
+            <tr><td>사다리차</td><td>20~25만원</td></tr>
+            <tr><td>크레인</td><td>25~30만원</td></tr>
+            <tr><td rowspan="3">4층 이상<br>(인력운반 불가)</td><td>지게차</td><td>5만원</td></tr>
+            <tr><td>사다리차</td><td>20~25만원</td></tr>
+            <tr><td>크레인</td><td>25~30만원</td></tr>
+          </tbody>
+        </table>
+        <p class="g-note">※ 1층 인력운반은 무상이나, 단차가 있을 경우 별도 비용이 발생합니다.<br>※ 2~3층 인력운반 비용은 모델별로 상이하며, 아래 계단 운반비용 표를 참고하세요.<br>※ 지게차·사다리차·크레인 등 장비 사용료는 현장상황에 따라 단가표 대비 높게 청구될 수 있으므로 고객에게 사전 고지가 필요합니다.</p>
+      </div>
+
+      <div class="g-block">
+        <h3>계단 운반비용 &middot; 이지스 74 <span style="font-size:12px;color:#999;font-weight:600;">(VAT 별도)</span></h3>
+        <table class="g-table">
+          <thead><tr><th>모델</th><th>무게</th><th>2층</th><th>3층</th><th>4층 이상</th></tr></thead>
+          <tbody>
+            <tr><td>이지스 74</td><td>129kg</td><td>판매처 문의</td><td>판매처 문의</td><td>별도 협의</td></tr>
+          </tbody>
+        </table>
+        <p class="g-note">※ 무게·층수에 따라 운반비용이 달라지며, 엘리베이터 이용 시에는 별도 계단비용이 발생하지 않습니다.</p>
+      </div>
+
+      <div class="g-block">
+        <h3>교환 / 반품 안내</h3>
+        <h4>교환 및 반품이 가능한 경우</h4>
+        <ul>
+          <li>구매자 단순 변심은 상품 인도일로부터 7일 이내 가능 (반품 배송비 구매자 부담)</li>
+          <li>공급받은 상품이 표시 및 계약 내용과 다르게 이행된 경우, 상품 인도일로부터 3개월 이내, 그 사실을 안 날 또는 알 수 있었던 날로부터 30일 이내에 가능 (반품 배송비 판매자 부담)</li>
+        </ul>
+        <h4>교환 및 반품이 불가능한 경우</h4>
+        <ul>
+          <li>구매자에게 책임이 있는 사유로 재화 등이 멸실되거나 훼손된 경우</li>
+          <li>구매자의 사용 또는 일부 소비로 재화 등의 가치가 현저히 감소한 경우</li>
+          <li>시간이 지나 다시 판매하기 곤란할 정도로 재화 등의 가치가 현저히 감소한 경우</li>
+        </ul>
+        <p class="g-note">※ 근거법률: 전자상거래 등에서의 소비자보호에 관한 법률 제17조(청약철회 등) 2항</p>
+      </div>
+
+      <div class="g-block">
+        <h3>A/S 안내</h3>
+        <p style="font-size:14px;color:#333;margin-bottom:10px;">A/S 대표전화 <span class="g-tel">1588-3112</span> <span style="color:#888;font-size:13px;">(평일 09:00~18:00 / 토·일요일 및 공휴일 휴무)</span></p>
+        <ul>
+          <li>보증기간 내에 정상적인 사용 중 발생한 제품 고장은 무상으로 수리해 드립니다. (보증기간: 1년, 구입년도 포함)</li>
+        </ul>
+        <h4>다음과 같은 경우에는 보증기간 중이라도 유상입니다</h4>
+        <ul>
+          <li>사용자 과실 (열쇠나 비밀번호의 분실 등)</li>
+          <li>부주의나 무리한 사용으로 인한 고장</li>
+          <li>외부의 침입이나 타격으로 인한 고장</li>
+          <li>소모품의 교체와 방문 사용설명 안내</li>
+          <li>천재지변에 의한 고장</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="foot">
+    <div class="brand">AEGIS</div>
+    <div>프리미엄 사무용 금고 · 이지스 74</div>
+    <div class="cs">고객센터 1588-3112</div>
+  </footer>
+
+</div>
