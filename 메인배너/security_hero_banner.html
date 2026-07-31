@@ -1,0 +1,41 @@
+<!-- 에스원 시스템경비/시큐리티 메인 히어로 배너 -->
+<style>
+  .s1-hero{display:grid;grid-template-columns:0.95fr 1.05fr;gap:40px;align-items:center;
+    background:#f7f7f5;border-radius:24px;padding:56px;font-family:'Noto Sans KR',-apple-system,sans-serif;box-sizing:border-box;}
+  .s1-hero *{box-sizing:border-box;}
+  .s1-title{font-size:32px;line-height:1.35;font-weight:700;color:#1a1a1a;margin:0 0 18px;}
+  .s1-sub{font-size:17px;line-height:1.6;color:#6b6b6b;margin:0 0 32px;}
+  .s1-features{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:32px;}
+  .s1-feat{background:#fff;border-radius:14px;padding:16px 6px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.04);}
+  .s1-feat-icon{font-size:26px;line-height:1;}
+  .s1-feat-label{font-size:12px;color:#555;margin-top:8px;}
+  .s1-cta{display:inline-block;border:1px solid #d0d0d0;border-radius:999px;background:#fff;
+    padding:14px 28px;font-size:15px;color:#1a1a1a;text-decoration:none;font-weight:500;cursor:pointer;}
+  .s1-cta:hover{background:#f0f0f0;}
+  .s1-img{border-radius:24px;overflow:hidden;min-height:440px;background:#e8e8e6;
+    display:flex;align-items:center;justify-content:center;}
+  .s1-img img{width:100%;height:100%;object-fit:cover;display:block;}
+  @media(max-width:860px){.s1-hero{grid-template-columns:1fr;padding:32px;}
+    .s1-img{order:-1;min-height:280px;}.s1-features{grid-template-columns:repeat(3,1fr);}}
+</style>
+
+<div class="s1-hero">
+  <div class="s1-img">
+    <!-- 실제 이미지 경로로 교체하세요: 주택·매장·사무실·공장을 아우르는 통합보안 일러스트(기존 톤 유지) -->
+    <img src="IMAGE_URL_HERE" alt="에스원 시스템경비 통합보안 서비스"
+      onerror="this.style.display='none';this.parentElement.innerHTML='<span style=&quot;color:#999;font-size:14px;&quot;>이미지 영역 — 주택·사업장 통합보안 일러스트</span>'">
+  </div>
+  <div class="s1-copy">
+    <h1 class="s1-title">주택부터 사업장까지,<br>24시간 빈틈없이 지키는 단 하나의 통합 보안</h1>
+    <p class="s1-sub">주택, 매장, 사무실, 공장까지 — 첨단 감지 시스템과 24시간 통합관제 센터,<br>즉각적인 현장 출동이 소중한 일상과 사업장을 빈틈없이 지킵니다.</p>
+    <div class="s1-features">
+      <div class="s1-feat"><div class="s1-feat-icon">🚨</div><div class="s1-feat-label">출동경비</div></div>
+      <div class="s1-feat"><div class="s1-feat-icon">📹</div><div class="s1-feat-label">영상보안</div></div>
+      <div class="s1-feat"><div class="s1-feat-icon">🔑</div><div class="s1-feat-label">출입통제</div></div>
+      <div class="s1-feat"><div class="s1-feat-icon">🖥️</div><div class="s1-feat-label">통합관제</div></div>
+      <div class="s1-feat"><div class="s1-feat-icon">🛡️</div><div class="s1-feat-label">무인경비</div></div>
+      <div class="s1-feat"><div class="s1-feat-icon">📱</div><div class="s1-feat-label">모바일 관제</div></div>
+    </div>
+    <a class="s1-cta" href="https://www.s1.co.kr/">에스원 시큐리티 서비스 자세히 알아보기</a>
+  </div>
+</div>
