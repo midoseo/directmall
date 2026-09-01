@@ -244,7 +244,7 @@ def convert(src_path, out_dir, name=None, code=None):
 
     out_path = os.path.join(out_dir, 'index.html')
     open(out_path, 'w', encoding='utf-8').write(
-        header + '<style>\n' + new_css + '\n</style>\n' + body.strip() + '\n')
+        '<meta charset="UTF-8">\n' + header + '<style>\n' + new_css + '\n</style>\n' + body.strip() + '\n')
 
     # 자체 검증
     assert new_css.count('{') == new_css.count('}'), '중괄호 불균형'
