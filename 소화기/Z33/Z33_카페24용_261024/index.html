@@ -1,0 +1,977 @@
+
+<!--
+  ============================================================
+  SAFELIFE Z33 가정/상업용 분말 ABC 소화기 — 카페24 상품 상세설명 삽입용 [v3.1]
+  · 상세설명 에디터 [HTML] 소스 모드에 아래 전체를 붙여넣기
+  · images/ 경로는 웹FTP 업로드 후 실제 경로로 치환
+  · 저장 후 위지윅 모드로 재전환 금지 (style 태그 삭제됨)
+  · 원본: 업체 제작 통이미지(소화기/Z33/Z33 상세페이지.zip) → 텍스트 HTML화
+  ============================================================
+-->
+<style>
+	@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+	/* ── 기본 디자인 (원본 톤: 라이트그레이 + 블랙 라벨, 포인트 레드) ── */
+	
+	.lucell {
+		max-width: 860px;margin: 0 auto;font-family: Pretendard, 'Noto Sans KR', 'Apple SD Gothic Neo', '맑은 고딕', sans-serif;color: #1a1a1a;line-height: 1.65;-webkit-text-size-adjust: 100%;letter-spacing: -0.01em;
+	}
+	
+	.lucell * {
+		margin: 0;padding: 0;box-sizing: border-box;
+	}
+	
+	.lucell img {
+		display: block;max-width: 100%;height: auto;
+	}
+	
+	.lucell .eyebrow {
+		font-size: 13px;font-size: clamp(12px, 1.67cqi, 13px);letter-spacing: 0.22em;font-weight: 700;color: #c8281e;text-transform: uppercase;margin-bottom: 18px;
+	}
+	
+	.lucell h2 {
+		font-size: 32px;font-size: clamp(23.7px, 4.1cqi, 32px);font-weight: 800;line-height: 1.28;letter-spacing: -0.03em;
+	}
+	
+	.lucell .lead {
+		font-size: 16px;font-size: clamp(14.1px, 2.05cqi, 16px);color: #555;margin-top: 18px;line-height: 1.75;word-break: keep-all;
+	}
+	
+	.lucell .sec {
+		padding: 80px 34px;
+	}
+	
+	.lucell .center {
+		text-align: center;
+	}
+	
+	.lucell .pill {
+		display: inline-block;background: #111;color: #fff;border-radius: 40px;padding: 5px 16px;font-size: 14px;font-size: clamp(12.9px, 1.79cqi, 14px);font-weight: 700;letter-spacing: 0.02em;
+	}
+	/* HERO */
+	
+	.lucell .hero {
+		background: #f2f3f5;padding: 70px 34px 0;text-align: center;overflow: hidden;
+	}
+	
+	.lucell .hero h1 {
+		font-size: 46px;font-size: clamp(34px, 5.9cqi, 46px);font-weight: 800;line-height: 1.22;letter-spacing: -0.04em;margin: 0 0 16px;
+	}
+	
+	.lucell .hero .sub {
+		font-size: 16px;font-size: clamp(14.1px, 2.05cqi, 16px);color: #666;
+	}
+	
+	.lucell .hero .tags {
+		margin-top: 22px;font-size: 13px;font-size: clamp(12px, 1.67cqi, 13px);color: #888;letter-spacing: 0.02em;
+	}
+	
+	.lucell .hero .tags span {
+		color: #c8281e;
+	}
+	
+	.lucell .hero-img {
+		margin: 40px auto 0;max-width: 720px;border-radius: 22px 22px 0 0;overflow: hidden;
+	}
+	/* INTRO + 컬러 라인업 */
+	
+	.lucell .intro {
+		background: #fff;text-align: center;
+	}
+	
+	.lucell .intro h2 .model {
+		display: inline-block;border: 2px solid #111;border-radius: 40px;padding: 0 14px;margin-right: 8px;font-weight: 600;
+	}
+	
+	.lucell .lineup {
+		margin: 44px auto 0;max-width: 600px;
+	}
+	
+	.lucell .colors {
+		display: flex;justify-content: space-between;max-width: 600px;margin: 12px auto 0;
+	}
+	
+	.lucell .colors span {
+		flex: 1;text-align: center;font-size: 13px;font-size: clamp(11px, 1.67cqi, 13px);color: #666;font-weight: 600;
+	}
+	
+	.lucell .colors i {
+		display: block;width: 12px;height: 12px;border-radius: 50%;margin: 0 auto 6px;border: 1px solid rgba(0, 0, 0, .12);
+	}
+	/* FEATURES 카드 */
+	
+	.lucell .feats {
+		background: #e3e4e6;
+	}
+	
+	.lucell .feats h2 {
+		text-align: center;margin-bottom: 44px;
+	}
+	
+	.lucell .cards {
+		display: grid;grid-template-columns: repeat(2, 1fr);gap: 24px;max-width: 660px;margin: 0 auto;
+	}
+	
+	.lucell .card {
+		background: #e9eaec;border-radius: 22px;overflow: hidden;border: 2px solid #fff;display: flex;flex-direction: column;
+	}
+	
+	.lucell .card .ci {
+		position: relative;background: #fff;
+	}
+	
+	.lucell .card .ci img {
+		width: 100%;aspect-ratio: 10/9;object-fit: cover;
+	}
+	
+	.lucell .card.wide {
+		grid-column: 1 / -1;
+	}
+	
+	.lucell .card:last-child:nth-child(odd):not(.wide) {
+		grid-column: 1 / -1;width: calc(50% - 12px);margin: 0 auto;
+	}
+	
+	.lucell .card.wide .ci img {
+		aspect-ratio: auto;
+	}
+	
+	.lucell .card .no {
+		position: absolute;left: 14px;top: 14px;background: #111;color: #fff;border-radius: 20px;padding: 1px 11px;font-size: 15px;font-weight: 600;line-height: 1.6;
+	}
+	
+	.lucell .card .ct {
+		background: #e9eaec;padding: 18px 20px 22px;flex: 1;
+	}
+	
+	.lucell .card b {
+		display: block;font-size: 17px;font-size: clamp(15px, 2.18cqi, 17px);font-weight: 700;letter-spacing: -0.02em;
+	}
+	
+	.lucell .card small {
+		display: block;font-size: 13.5px;font-size: clamp(12.4px, 1.73cqi, 13.5px);color: #777;margin-top: 6px;line-height: 1.55;word-break: keep-all;
+	}
+	/* LIFESTYLE */
+	
+	.lucell .life {
+		background: #fff;padding: 0 34px 80px;
+	}
+	
+	.lucell .life img {
+		border-radius: 22px;margin: 0 auto;max-width: 660px;
+	}
+	/* SPEC */
+	
+	.lucell .spec {
+		background: #fff;padding-top: 20px;
+	}
+	
+	.lucell .spec h2 {
+		text-align: center;margin-bottom: 34px;font-size: 28px;font-size: clamp(20.7px, 3.59cqi, 28px);
+	}
+	
+	.lucell table {
+		width: 100%;border-collapse: collapse;font-size: 15px;font-size: clamp(13.8px, 1.92cqi, 15px);border-top: 2px solid #1a1a1a;
+	}
+	
+	.lucell th,
+	.lucell td {
+		border-bottom: 1px solid #eee;padding: 15px 16px;text-align: left;vertical-align: middle;
+	}
+	
+	.lucell th {
+		background: #f7f7f8;width: 34%;color: #333;font-weight: 600;white-space: nowrap;
+	}
+	
+	.lucell td {
+		color: #444;
+	}
+	/* CERT */
+	
+	.lucell .cert {
+		background: #e3e4e6;
+	}
+	
+	.lucell .cert h2 {
+		text-align: center;margin-bottom: 12px;
+	}
+	
+	.lucell .cert .lead {
+		text-align: center;margin-bottom: 40px;
+	}
+	
+	.lucell .certs {
+		display: grid;grid-template-columns: repeat(2, 1fr);gap: 22px;max-width: 660px;margin: 0 auto;
+	}
+	
+	.lucell .certs figure {
+		background: #fff;border-radius: 18px;padding: 14px 14px 12px;
+	}
+	
+	.lucell .certs img {
+		margin: 0 auto;
+	}
+	
+	.lucell .certs figure:last-child:nth-child(odd) {
+		grid-column: 1 / -1;width: calc(50% - 11px);margin: 0 auto;
+	}
+	
+	.lucell .certs figcaption {
+		text-align: center;font-size: 13px;font-size: clamp(12px, 1.67cqi, 13px);color: #555;font-weight: 600;margin-top: 10px;
+	}
+	/* CAUTION */
+	
+	.lucell .caution {
+		background: #fff;
+	}
+	
+	.lucell .caution h2 {
+		text-align: center;margin-bottom: 12px;
+	}
+	
+	.lucell .cbox {
+		max-width: 660px;margin: 48px auto 0;
+	}
+	
+	.lucell .cbox h3 {
+		font-size: 18px;font-size: clamp(15.8px, 2.31cqi, 18px);font-weight: 800;padding-left: 12px;border-left: 3px solid #c8281e;letter-spacing: -0.02em;margin-bottom: 22px;
+	}
+	
+	.lucell .cbox p {
+		font-size: 15px;font-size: clamp(13.8px, 1.92cqi, 15px);color: #444;margin-top: 20px;text-align: center;line-height: 1.7;word-break: keep-all;
+	}
+	
+	.lucell .cbox .ph {
+		border-radius: 20px;overflow: hidden;
+	}
+	
+	.lucell .cbox .note {
+		font-size: 13px;font-size: clamp(12px, 1.67cqi, 13px);color: #888;margin-top: 8px;
+	}
+	/* FAQ */
+	
+	.lucell .faq {
+		background: #f2f3f5;
+	}
+	
+	.lucell .faq h2 {
+		text-align: center;margin-bottom: 44px;font-size: 28px;font-size: clamp(20.7px, 3.59cqi, 28px);
+	}
+	
+	.lucell .qa {
+		max-width: 660px;margin: 0 auto 22px;
+	}
+	
+	.lucell .q {
+		display: flex;gap: 12px;background: #fff;border-radius: 14px;padding: 16px 22px;font-size: 16px;font-size: clamp(14.1px, 2.05cqi, 16px);font-weight: 700;box-shadow: 0 2px 10px rgba(0, 0, 0, .03);
+	}
+	
+	.lucell .q i {
+		color: #c8281e;font-style: normal;
+	}
+	
+	.lucell .a {
+		font-size: 14.5px;font-size: clamp(13.3px, 1.86cqi, 14.5px);color: #666;padding: 12px 22px 0;word-break: keep-all;
+	}
+	/* GUIDE (배송·교환/반품·A/S) */
+	
+	.lucell .guide {
+		background: #fff;
+	}
+	
+	.lucell .guide .ghead {
+		text-align: center;margin-bottom: 12px;
+	}
+	
+	.lucell .guide h2 {
+		font-size: 26px;font-size: clamp(19.2px, 3.33cqi, 26px);
+	}
+	
+	.lucell .g-wrap {
+		max-width: 680px;margin: 44px auto 0;
+	}
+	
+	.lucell .g-block {
+		margin-bottom: 40px;
+	}
+	
+	.lucell .g-block h3 {
+		font-size: 18px;font-size: clamp(15.8px, 2.31cqi, 18px);font-weight: 800;padding-left: 12px;border-left: 3px solid #c8281e;margin-bottom: 14px;letter-spacing: -0.02em;
+	}
+	
+	.lucell .g-block h4 {
+		font-size: 14px;font-size: clamp(12.9px, 1.79cqi, 14px);font-weight: 700;color: #555;margin: 18px 0 8px;
+	}
+	
+	.lucell .g-block ul {
+		list-style: none;
+	}
+	
+	.lucell .g-block li {
+		position: relative;padding: 5px 0 5px 15px;font-size: 13.5px;font-size: clamp(12.4px, 1.73cqi, 13.5px);color: #555;line-height: 1.65;word-break: keep-all;
+	}
+	
+	.lucell .g-block li::before {
+		content: '–';position: absolute;left: 0;color: #c8281e;font-weight: 700;
+	}
+	
+	.lucell .g-note {
+		font-size: 12px;font-size: clamp(11px, 1.54cqi, 12px);color: #999;margin-top: 9px;line-height: 1.6;
+	}
+	
+	.lucell .g-tel {
+		font-weight: 800;color: #c8281e;font-size: 17px;font-size: clamp(15px, 2.18cqi, 17px);
+	}
+	/* FOOTER */
+	
+	.lucell .foot {
+		background: #141414;color: #cfcfcf;padding: 48px 34px;text-align: center;font-size: 13px;font-size: clamp(12px, 1.67cqi, 13px);
+	}
+	
+	.lucell .foot .slogan {
+		font-size: 22px;font-size: clamp(18px, 2.82cqi, 22px);font-weight: 800;font-style: italic;color: #fff;letter-spacing: -0.03em;
+	}
+	
+	.lucell .foot .slogan-ko {
+		color: #9a9a9a;margin: 4px 0 18px;
+	}
+	
+	.lucell .foot .msg {
+		line-height: 1.7;word-break: keep-all;
+	}
+	
+	.lucell .foot .brand {
+		font-size: 16px;font-weight: 800;color: #fff;letter-spacing: 0.12em;margin-top: 24px;
+	}
+	
+	.lucell .foot .cs {
+		color: #ff8a80;font-weight: 700;font-size: 15px;font-size: clamp(13.8px, 1.92cqi, 15px);margin-top: 8px;
+	}
+	/* ═══════════════════════════════════════════════════════════════════
+   [v3.1] 카페24 상세설명 대응 — 컨테이너 쿼리 전환 + 스킨 CSS 방어
+   · 뷰포트(화면 폭)가 아니라 삽입된 컬럼 폭에 반응합니다
+   · 아래 블록은 위 기본 CSS를 덮어쓰는 오버라이드입니다 (순서 유지 필수)
+   ═══════════════════════════════════════════════════════════════════ */
+	/* 1) 컨테이너 선언 */
+	
+	.lucell {
+		container-type: inline-size; container-name: lud; display: block; width: 100%; max-width: 860px; margin: 0 auto; font-size: 16px; text-align: left; word-break: keep-all; overflow-wrap: anywhere; -webkit-text-size-adjust: 100%; text-size-adjust: 100%;
+	}
+	/* 2) 스킨 CSS 방어 */
+	
+	.lucell *,
+	.lucell *::before,
+	.lucell *::after {
+		box-sizing: border-box !important;
+	}
+	
+	.lucell * {
+		font-family: inherit;
+	}
+	
+	.lucell img {
+		display: block !important;max-width: 100% !important;height: auto !important;border: 0;
+	}
+	
+	.lucell table {
+		width: 100% !important;max-width: 100% !important;border-collapse: collapse;background: none;
+	}
+	
+	.lucell p,
+	.lucell li,
+	.lucell h1,
+	.lucell h2,
+	.lucell h3,
+	.lucell h4 {
+		word-break: keep-all;overflow-wrap: anywhere;
+	}
+	
+	.lucell th,
+	.lucell td {
+		word-break: keep-all;overflow-wrap: break-word;
+	}
+	
+	.lucell th {
+		white-space: nowrap;
+	}
+	
+	.lucell ul,
+	.lucell ol {
+		list-style: none;
+	}
+	/* 3) 이미지 개별 규칙 재선언 (방어 규칙에 덮이지 않도록) */
+	
+	.lucell .hero-img {
+		width: 100% !important;max-width: 720px !important;
+	}
+	
+	.lucell .lineup {
+		width: 100% !important;max-width: 600px !important;
+	}
+	
+	.lucell .card .ci img {
+		width: 100% !important;aspect-ratio: 10/9;object-fit: cover;height: auto !important;
+	}
+	
+	.lucell .card.wide .ci img {
+		aspect-ratio: auto;
+	}
+	
+	.lucell .life img {
+		width: 100% !important;max-width: 660px !important;
+	}
+	
+	.lucell .cbox img,
+	.lucell .certs img {
+		width: 100% !important;
+	}
+	/* 4) 컨테이너 폭별 여백/레이아웃 전환 (화면 폭 아님) */
+	
+	@container lud (max-width:620px) {
+		.lucell .sec {
+			padding: 56px 22px;
+		}
+		.lucell .hero {
+			padding: 48px 22px 0;
+		}
+		.lucell .life {
+			padding: 0 22px 56px;
+		}
+		.lucell .foot {
+			padding: 36px 22px;
+		}
+		.lucell .cards,
+		.lucell .certs {
+			gap: 14px;
+		}
+		.lucell .card .ct {
+			padding: 14px 14px 18px;
+		}
+		.lucell table {
+			table-layout: fixed;
+		}
+		.lucell th {
+			white-space: normal;
+		}
+		.lucell .q {
+			padding: 14px 16px;
+		}
+		.lucell .a {
+			padding: 12px 16px 0;
+		}
+	}
+	
+	@container lud (max-width:460px) {
+		.lucell .sec {
+			padding: 44px 16px;
+		}
+		.lucell .hero {
+			padding: 40px 16px 0;
+		}
+		.lucell .life {
+			padding: 0 16px 44px;
+		}
+		.lucell .foot {
+			padding: 30px 16px;
+		}
+		.lucell .card.wide {
+			grid-column: 1 / -1;
+		}
+		.lucell .card:last-child:nth-child(odd):not(.wide) {
+			grid-column: 1 / -1;width: calc(50% - 12px);margin: 0 auto;
+		}
+		.lucell .card.wide .ci img {
+			aspect-ratio: auto;
+		}
+		.lucell .card .no {
+			font-size: 13px;left: 10px;top: 10px;
+		}
+		.lucell .certs figure {
+			padding: 8px 8px 8px;border-radius: 12px;
+		}
+		.lucell .colors span {
+			font-size: 11px;
+		}
+	}
+	
+	@container lud (max-width:340px) {
+		.lucell .cards {
+			grid-template-columns: 1fr;
+		}
+	}
+	/* 5) 컨테이너 쿼리 미지원(구형) 브라우저 폴백 */
+	
+	@supports not (container-type:inline-size) {
+		@media (max-width: 560px) {
+			.lucell .sec {
+				padding: 56px 22px;
+			}
+			.lucell .hero {
+				padding: 48px 22px 0;
+			}
+			.lucell .life {
+				padding: 0 22px 56px;
+			}
+			.lucell .cards,
+			.lucell .certs {
+				gap: 14px;
+			}
+			.lucell .card .ct {
+				padding: 14px 14px 18px;
+			}
+			.lucell h2 {
+				font-size: 25px;
+			}
+			.lucell .hero h1 {
+				font-size: 34px;
+			}
+			.lucell th,
+			.lucell td {
+				padding: 12px 12px;font-size: 13.5px;
+			}
+		}
+	}
+
+	/* ── v4 추가 (10/24) ── */
+	/* 에디터 변환 대응: b→strong, i→em 으로 바뀌어도 동일하게 보이도록 */
+	.lucell .card .ct strong,.lucell .card .ct b{display:block;font-size:17px;font-size:clamp(15px,2.18cqi,17px);font-weight:700;letter-spacing:-0.02em;color:#1a1a1a;word-break:keep-all;}
+	.lucell .q em,.lucell .q i{color:#c8281e;font-style:normal;font-weight:800;}
+	.lucell .hero .tags .dot{color:#c8281e;}
+	.lucell .colors{display:flex;justify-content:space-between;max-width:700px;margin:14px auto 0;}
+	.lucell .colors .c{flex:1;text-align:center;font-size:13px;font-size:clamp(11px,1.67cqi,13px);color:#666;font-weight:600;}
+	.lucell .colors .sw{display:block;width:12px;height:12px;border-radius:50%;margin:0 auto 6px;border:1px solid rgba(0,0,0,.12);}
+
+	/* ABC 설명 */
+	.lucell .abc{background:#f2f3f5;text-align:center;}
+	.lucell .abc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:660px;margin:40px auto 0;}
+	.lucell .abc-item{background:#fff;border-radius:18px;padding:26px 12px 22px;}
+	.lucell .abc-badge{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;color:#fff;font-weight:800;font-size:22px;margin-bottom:12px;}
+	.lucell .abc-badge.a{background:#2f7d4f;}
+	.lucell .abc-badge.b{background:#d98a00;}
+	.lucell .abc-badge.c{background:#2a5bd7;}
+	.lucell .abc-item strong{display:block;font-size:17px;font-size:clamp(14.5px,2.18cqi,17px);font-weight:800;}
+	.lucell .abc-item small{display:block;font-size:13px;font-size:clamp(11.5px,1.67cqi,13px);color:#777;margin-top:6px;line-height:1.55;word-break:keep-all;}
+	.lucell .unit{max-width:660px;margin:28px auto 0;background:#111;color:#fff;border-radius:20px;padding:30px 24px 26px;}
+	.lucell .unit-ttl{font-size:17px;font-size:clamp(15px,2.18cqi,17px);font-weight:700;}
+	.lucell .unit-code{color:#ff8a80;letter-spacing:0.04em;}
+	.lucell .unit-row{display:flex;justify-content:center;gap:10px;margin:22px 0 18px;}
+	.lucell .unit-cell{flex:1;max-width:170px;border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:14px 6px 12px;}
+	.lucell .u-big{display:block;font-size:34px;font-size:clamp(26px,4.4cqi,34px);font-weight:800;line-height:1.1;}
+	.lucell .u-n{font-style:normal;color:#ff8a80;margin-left:2px;}
+	.lucell .unit-cell small{display:block;font-size:12.5px;font-size:clamp(11px,1.6cqi,12.5px);color:#bbb;margin-top:6px;line-height:1.5;}
+	.lucell .unit-note{font-size:13px;font-size:clamp(11.5px,1.67cqi,13px);color:#aaa;line-height:1.7;word-break:keep-all;text-align:left;}
+	.lucell .unit-note b{color:#fff;}
+
+	/* 소/중/대 비교표 */
+	.lucell .cmp{background:#fff;text-align:center;}
+	.lucell .cmp-wrap{max-width:720px;margin:36px auto 0;}
+	.lucell table.cmp-table{width:100%;border-collapse:separate;border-spacing:0;table-layout:fixed;border-top:0;font-size:14px;font-size:clamp(11.5px,1.86cqi,14px);}
+	.lucell .cmp-table col.c-lbl{width:22%;}
+	.lucell .cmp-table th,.lucell .cmp-table td{border-bottom:1px solid #eee;padding:12px 6px;text-align:center;vertical-align:middle;color:#444;line-height:1.5;word-break:keep-all;overflow-wrap:break-word;white-space:normal;}
+	.lucell .cmp-table th.lbl{background:#f7f7f8;color:#333;font-weight:700;text-align:left;padding-left:12px;width:auto;}
+	.lucell .cmp-table thead th.lbl{background:#fff;border-bottom:0;}
+	.lucell .cmp-table .cmp-img td{border-bottom:0;padding:10px 6px 0;}
+	.lucell .cmp-table .cmp-img img{width:100% !important;max-width:150px !important;margin:0 auto;}
+	.lucell .cmp-table .cmp-name td{border-bottom:2px solid #1a1a1a;padding:10px 4px 14px;}
+	.lucell .cmp-table .size{display:block;font-size:12px;font-size:clamp(10px,1.54cqi,12px);color:#999;font-weight:700;}
+	.lucell .cmp-table .nm{display:block;font-size:22px;font-size:clamp(16px,2.82cqi,22px);font-weight:800;color:#1a1a1a;letter-spacing:-0.02em;}
+	.lucell .cmp-table .cmp-name small{display:block;font-size:13px;font-size:clamp(11px,1.67cqi,13px);color:#666;}
+	.lucell .cmp-table td.on{background:#fff5f4;color:#1a1a1a;font-weight:600;}
+	.lucell .cmp-table .cmp-name td.on .size{color:#c8281e;}
+	.lucell .cmp-table .dots{display:inline-flex;gap:3px;margin-top:6px;}
+	.lucell .cmp-table .dots .sw{display:inline-block;width:10px;height:10px;border-radius:50%;border:1px solid rgba(0,0,0,.12);}
+	.lucell .cmp-note{font-size:12px;font-size:clamp(11px,1.54cqi,12px);color:#999;margin-top:14px;line-height:1.6;word-break:keep-all;}
+
+	/* 이미지 개별 규칙 재선언 */
+	.lucell .lineup{width:100% !important;max-width:700px !important;}
+
+	@container lud (max-width:620px){
+		.lucell .abc-grid{gap:8px;}
+		.lucell .abc-item{padding:18px 6px 16px;border-radius:14px;}
+		.lucell .abc-badge{width:38px;height:38px;font-size:18px;}
+		.lucell .unit{padding:24px 16px 20px;}
+		.lucell .unit-row{gap:6px;}
+		.lucell .cmp-table th,.lucell .cmp-table td{padding:10px 3px;}
+		.lucell .cmp-table th.lbl{padding-left:6px;}
+	}
+	@container lud (max-width:460px){
+		.lucell .cmp-table col.c-lbl{width:20%;}
+		.lucell .cmp-table .dots .sw{width:8px;height:8px;}
+		.lucell .cmp-table .dots{gap:2px;}
+	}
+	@supports not (container-type:inline-size){
+	@media (max-width:560px){
+		.lucell .abc-grid{gap:8px;}
+		.lucell .abc-item{padding:18px 6px 16px;}
+		.lucell .cmp-table th,.lucell .cmp-table td{padding:10px 3px;font-size:11.5px;}
+	}
+	}
+</style>
+<div class="lucell">
+
+	<!-- HERO -->
+	<section class="hero">
+
+		<p class="eyebrow">SAFELIFE Z33 · 가정/상업용 소화기</p>
+
+		<h1>넓은 공간도 든든하게,
+			<br>위급할 땐 누구나 빠르게</h1>
+
+		<p class="sub">가정과 상업공간을 위한 분말 ABC 소화기</p>
+
+		<p class="tags">A4B6C 소화능력 &nbsp;<span class="dot">·</span>&nbsp; 약제 3.3kg &nbsp;<span class="dot">·</span>&nbsp; 40평 이상 커버 &nbsp;<span class="dot">·</span>&nbsp; 환경부 인증 친환경 약제</p>
+		<img src="images/hero.jpg" width="714" height="628" alt="거실 창가에 놓인 화이트 컬러 SAFELIFE Z33 소화기" class="hero-img">
+	</section>
+
+	<!-- INTRO + LINEUP -->
+	<section class="sec intro">
+
+		<h2><span class="model">Z33</span>가정/상업용 분말 ABC 소화기</h2>
+
+		<p class="lead">어디에나 자연스럽게 비치할 수 있는 Z33 소화기.
+			<br>가정과 상업공간에서 위급 상황 발생 시 누구나 쉽고 빠르게 화재에 대응할 수 있습니다.</p>
+		<img src="images/lineup.jpg" width="1732" height="640" alt="Z33 소화기 4가지 컬러 — 레드, 블랙, 화이트, 카키" class="lineup">
+		<div class="colors">
+			<span class="c"><i class="sw" style="background:#c8171c;"></i>레드</span>
+			<span class="c"><i class="sw" style="background:#1d1d1d;"></i>블랙</span>
+			<span class="c"><i class="sw" style="background:#e0e0e0;"></i>화이트</span>
+			<span class="c"><i class="sw" style="background:#3a4d2c;"></i>카키</span>
+		</div>
+	</section>
+
+	<!-- ABC 설명 -->
+	<section class="sec abc">
+		<p class="eyebrow center">WHAT IS ABC</p>
+		<h2>ABC 소화기란?</h2>
+		<p class="lead">화재는 타는 물질에 따라 A·B·C급으로 나뉩니다.<br>ABC 소화기는 한 대로 세 가지 화재에 모두 사용할 수 있는 분말 소화기입니다.</p>
+		<div class="abc-grid">
+			<div class="abc-item"><span class="abc-badge a">A</span><strong>일반화재</strong><small>종이 · 목재 · 섬유 등<br>타고 나서 재가 남는 화재</small></div>
+			<div class="abc-item"><span class="abc-badge b">B</span><strong>유류화재</strong><small>휘발유 · 등유 · 페인트 등<br>인화성 액체 화재</small></div>
+			<div class="abc-item"><span class="abc-badge c">C</span><strong>전기화재</strong><small>콘센트 · 전선 · 가전제품 등<br>통전 중인 전기설비 화재</small></div>
+		</div>
+
+		<div class="unit">
+			<p class="unit-ttl">Z33의 소화능력 <b class="unit-code">A4 B6 C</b>는 무슨 뜻일까요?</p>
+			<div class="unit-row">
+				<div class="unit-cell"><span class="u-big">A<em class="u-n">4</em></span><small>일반화재<br>소화능력 4단위</small></div>
+				<div class="unit-cell"><span class="u-big">B<em class="u-n">6</em></span><small>유류화재<br>소화능력 6단위</small></div>
+				<div class="unit-cell"><span class="u-big">C</span><small>전기화재<br>사용 가능</small></div>
+			</div>
+			<p class="unit-note">A·B 옆의 숫자는 국가 형식승인 시험으로 정해진 <b>소화능력단위</b>로, 숫자가 클수록 더 큰 화재까지 대응할 수 있습니다. C는 전기화재에 사용할 수 있다는 표시로 별도 숫자가 붙지 않습니다.</p>
+		</div>
+	</section>
+
+	</section>
+
+	<!-- FEATURES -->
+	<section class="sec feats">
+
+		<p class="eyebrow center">POINT</p>
+
+		<h2>Z33만의 5가지 디테일</h2>
+		<div class="cards">
+			<div class="card">
+				<div class="ci"><img src="images/feat01.jpg" width="286" height="262" alt="SAFELIFE 제트노즐과 일반 소화기의 분사각 비교"><span class="no">01</span></div>
+				<div class="ct"><strong class="ttl">기존 대비 8배 넓은 분사각의 제트노즐 기술</strong><small>넓게 퍼지는 분사각으로 초기 화재를 더 쉽고 빠르게 진압합니다.</small></div>
+			</div>
+			<div class="card">
+				<div class="ci"><img src="images/feat02.jpg" width="286" height="270" alt="환경부 친환경 인증 마크"><span class="no">02</span></div>
+				<div class="ct"><strong class="ttl">환경부 인증 친환경 소화약제</strong><small>환경부 인증 기술로 재가공한 친환경 소화약제를 사용합니다.</small></div>
+			</div>
+			<div class="card">
+				<div class="ci"><img src="images/feat03.jpg" width="900" height="810" alt="Z33 소화기 손잡이와 지시 압력계 클로즈업"><span class="no">03</span></div>
+				<div class="ct"><strong class="ttl">인체공학적 손잡이 설계</strong><small>누구나 안정적으로 잡고 사용할 수 있도록 손잡이를 설계했습니다.</small></div>
+			</div>
+			<div class="card">
+				<div class="ci"><img src="images/feat04.jpg" width="286" height="253" alt="Z33 소화기 하단 받침과 호스 거치 구조"><span class="no">04</span></div>
+				<div class="ct"><strong class="ttl">안정적인 하단 디자인</strong><small>별도 받침 없이 본체만으로 안정적으로 세울 수 있고, 견고한 하부 구조로 공간 활용도를 높였습니다.</small></div>
+			</div>
+			<div class="card">
+				<div class="ci"><img src="images/feat05.jpg" width="286" height="253" alt="Z33 소화기 프리미엄 패키지 박스"><span class="no">05</span></div>
+				<div class="ct"><strong class="ttl">프리미엄 패키지 디자인</strong><small>소중한 분께 안전을 선물하기에도 손색없는 패키지로 제공됩니다.</small></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- SPEC -->
+	<section class="sec spec" style="padding-top:80px;">
+
+		<p class="eyebrow center">SPEC</p>
+
+		<h2>제품 상세정보</h2>
+
+		<table>
+			<tbody>
+				<tr>
+					<th>제품명</th>
+					<td>SAFELIFE Z33 가정/상업용 분말 ABC 소화기</td>
+				</tr>
+				<tr>
+					<th>소화능력 단위</th>
+					<td>A4B6C</td>
+				</tr>
+				<tr>
+					<th>약제 중량</th>
+					<td>3.3kg</td>
+				</tr>
+				<tr>
+					<th>총 중량</th>
+					<td>4.95kg</td>
+				</tr>
+				<tr>
+					<th>사이즈</th>
+					<td>Ø14 × 39(H) cm</td>
+				</tr>
+				<tr>
+					<th>방사 시간</th>
+					<td>12초</td>
+				</tr>
+				<tr>
+					<th>방사 거리</th>
+					<td>4~5m</td>
+				</tr>
+				<tr>
+					<th>사용 온도 범위</th>
+					<td>-20℃ ~ +40℃</td>
+				</tr>
+				<tr>
+					<th>내용연한</th>
+					<td>제조일로부터 10년</td>
+				</tr>
+				<tr>
+					<th>색상</th>
+					<td>레드 / 블랙 / 화이트 / 카키</td>
+				</tr>
+				<tr>
+					<th>제조사</th>
+					<td>씨더블유소방산업(주)</td>
+				</tr>
+				<tr>
+					<th>제조국</th>
+					<td>대한민국</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+
+	<!-- COMPARE 소/중/대 -->
+	<section class="sec cmp">
+		<p class="eyebrow center">LINE UP</p>
+		<h2>공간에 맞는 소화기를 골라보세요</h2>
+		<p class="lead">SAFELIFE 분말 ABC 소화기 소 · 중 · 대 3종 비교</p>
+		<div class="cmp-wrap">
+			<table class="cmp-table">
+				<colgroup><col class="c-lbl"><col><col><col class="c-on"></colgroup>
+				<thead>
+					<tr class="cmp-img">
+						<th class="lbl"></th>
+						<td><img src="images/cmp_Z07.png" width="520" height="740" alt="SAFELIFE Z07 차량용 소화기"></td>
+						<td><img src="images/cmp_H15.png" width="520" height="740" alt="SAFELIFE H15 가정용 소화기"></td>
+						<td class="on"><img src="images/cmp_Z33.png" width="520" height="740" alt="SAFELIFE Z33 가정/상업용 소화기"></td>
+					</tr>
+					<tr class="cmp-name">
+						<th class="lbl"></th>
+						<td><span class="size">소형</span><strong class="nm">Z07</strong><small>차량용</small></td>
+						<td><span class="size">중형</span><strong class="nm">H15</strong><small>가정용</small></td>
+						<td class="on"><span class="size">대형 · 현재 상품</span><strong class="nm">Z33</strong><small>가정/상업용</small></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr><th class="lbl">용도</th><td>차량 · 가정 겸용<br>(자동차겸용)</td><td>가정용</td><td class="on">가정 · 상업공간</td></tr>
+					<tr><th class="lbl">추천 설치 위치</th><td>차량 실내<br>(전용 카홀더)</td><td>현관 · 주방 · 거실</td><td class="on">매장 · 사무실 · 넓은 거실</td></tr>
+					<tr><th class="lbl">추천 고객</th><td>자가 운전자<br>1인 가구</td><td>아파트 · 주택 가정<br>집들이 선물</td><td class="on">소상공인 · 사무실<br>40평 이상 공간</td></tr>
+					<tr><th class="lbl">사이즈</th><td>Ø8.5 × 33cm</td><td>Ø11.5 × 36cm</td><td class="on">Ø14 × 39cm</td></tr>
+					<tr><th class="lbl">총 중량</th><td>1.5kg</td><td>2.78kg</td><td class="on">4.95kg</td></tr>
+					<tr><th class="lbl">약제 용량</th><td>0.7kg</td><td>1.5kg</td><td class="on">3.3kg</td></tr>
+					<tr><th class="lbl">소화능력</th><td>A1 B1 C</td><td>A2 B3 C</td><td class="on">A4 B6 C</td></tr>
+					<tr><th class="lbl">방사 시간</th><td>10초</td><td>10초</td><td class="on">12초</td></tr>
+					<tr><th class="lbl">방사 거리</th><td>2~3m</td><td>2~3m</td><td class="on">4~5m</td></tr>
+					<tr><th class="lbl">색상 옵션</th><td>4색<br><span class="dots"><i class="sw" style="background:#c8171c"></i><i class="sw" style="background:#1d1d1d"></i><i class="sw" style="background:#1f3a9e"></i><i class="sw" style="background:#e0e0e0"></i></span></td><td>5색<br><span class="dots"><i class="sw" style="background:#1d1d1d"></i><i class="sw" style="background:#d9d9d9"></i><i class="sw" style="background:#3d4128"></i><i class="sw" style="background:#e0a52a"></i><i class="sw" style="background:#d81e1e"></i></span></td><td class="on">4색<br><span class="dots"><i class="sw" style="background:#c8171c"></i><i class="sw" style="background:#1d1d1d"></i><i class="sw" style="background:#e0e0e0"></i><i class="sw" style="background:#3a4d2c"></i></span></td></tr>
+					<tr><th class="lbl">주요 특징</th><td>전용 카홀더 기본 구성<br>컴팩트 사이즈</td><td>마그네틱 호스 고정<br>일체형 하단 디자인</td><td class="on">넓은 공간 대응<br>안정적인 하단 디자인</td></tr>
+				</tbody>
+			</table>
+		</div>
+		<p class="cmp-note">※ 이미지는 실제 높이 비율(33 · 36 · 39cm)로 표현했습니다. 3종 모두 환경부 인증 친환경 소화약제와 제트노즐을 적용했습니다.</p>
+	</section>
+
+
+	<!-- LIFESTYLE -->
+	<section class="life">
+		<img src="images/lifestyle.jpg" width="640" height="460" alt="라탄 화분 옆 벽면에 놓인 화이트 컬러 Z33 소화기">
+	</section>
+
+	<!-- CERT -->
+	<section class="sec cert">
+
+		<p class="eyebrow center">CERTIFICATION</p>
+
+		<h2>인증 및 특허</h2>
+
+		<p class="lead">국가 형식승인과 환경표지 인증, 특허 기술로 만든 믿을 수 있는 소화기입니다.</p>
+		<div class="certs">
+			<figure><img src="images/cert01.jpg" width="293" height="419" alt="환경표지 인증서 — 한국환경산업기술원">
+				<figcaption>환경표지 인증서</figcaption>
+			</figure>
+			<figure><img src="images/cert02.jpg" width="293" height="419" alt="우수제품지정증서 — 조달청 (SAFE LIFE Z33·Z07)">
+				<figcaption>우수제품지정증서</figcaption>
+			</figure>
+			<figure><img src="images/cert03.jpg" width="293" height="417" alt="소화기 형식승인서 — 한국소방산업기술원(KFI)">
+				<figcaption>형식승인서 (KFI)</figcaption>
+			</figure>
+			<figure><img src="images/cert04.jpg" width="293" height="417" alt="소화기용 약제 분사노즐 특허증 — 특허청">
+				<figcaption>특허증</figcaption>
+			</figure>
+			<figure><img src="images/cert05.jpg" width="293" height="421" alt="생산물배상책임(PL)보험 증권">
+				<figcaption>생산물배상책임(PL)보험</figcaption>
+			</figure>
+			<figure><img src="images/cert06.jpg" width="293" height="421" alt="직접생산확인증명서 — 한국중소벤처기업유통원">
+				<figcaption>직접생산확인증명서</figcaption>
+			</figure>
+		</div>
+	</section>
+
+	<!-- CAUTION -->
+	<section class="sec caution">
+
+		<p class="eyebrow center">CAUTION</p>
+
+		<h2>사용 전 꼭 확인해 주세요</h2>
+
+		<div class="cbox">
+
+			<h3>물건을 받으시면 가장 먼저 지시 압력계를 확인해 주세요</h3>
+			<img src="images/gauge.jpg" width="628" height="244" alt="지시 압력계 바늘이 녹색 영역에 있으면 정상, 벗어나면 불량">
+
+			<p>지시 압력계의 눈금이 <strong>녹색 영역</strong>에 있는지 가장 먼저 확인해 주시고,
+				<br>정상이 아닐 경우 제조사(043-536-0119)로 바로 연락 바랍니다.</p>
+		</div>
+
+		<div class="cbox" style="text-align: center;">
+
+			<h3>소화기는 눈에 띄는 곳에 배치해 주세요</h3>
+			<img src="images/placement.jpg" width="660" height="156" alt="화장실·장롱 안 보관은 피하고 현관 앞이나 주방에 배치">
+
+			<p>화재가 발생할 경우 소화기를 제대로 사용하기 위해선 평소 관리가 중요합니다.
+				<br>습기가 많은 화장실이나 눈에 띄지 않는 장롱 안 등의 보관은 피하고,
+				<br>현관 앞이나 화재 발생 확률이 높은 주방에 배치하여 즉각 사용할 수 있도록 합니다.</p><span class="knote" style="color: rgb(125, 125, 125); font-size: 13px;">* 식용유/튀김기름 화재(K급) 시 분말소화기를 직접 방사하면 기름 튐으로 화재가 번질 수 있습니다.</span>
+			<br>
+		</div>
+
+		<div class="cbox">
+
+			<h3>화재가 발생하기 전까지 안전핀을 빼지 마세요!</h3>
+			<div class="ph"><img src="images/safetypin.jpg" width="640" height="460" alt="소화기 손잡이의 안전핀과 봉인줄"></div>
+
+			<p>봉인줄은 사용 시 일정한 힘을 가하면 자동으로 끊어지게 설계되어 있습니다.</p>
+
+			<p class="note" style="margin-top:6px;">추가 봉인줄이 필요한 경우 제조사(043-536-0119)로 문의해 주세요.</p>
+		</div>
+	</section>
+
+	<!-- FAQ -->
+	<section class="sec faq">
+
+		<h2>자주 묻는 질문</h2>
+		<div class="qa">
+
+			<p class="q"><em>Q</em> 소화기 내용연한(사용기간)은 언제까지인가요?</p>
+
+			<p class="a">소화기의 내용연한(사용기간)은 제조일로부터 10년이며, 소화기 뒷면에 부착된 스티커로 확인 가능합니다.</p>
+		</div>
+		<div class="qa">
+
+			<p class="q"><em>Q</em> 압력이 빠졌을 땐 어떻게 해야 하나요?</p>
+
+			<p class="a">구매 후 1년 이내에 압력이 빠졌을 경우 제조사 배송비 부담으로 무료 교환해 드립니다. 1년이 지난 이후부터는 고객님 택배비 부담으로 내용연한 만료일까지 A/S가 가능합니다.</p>
+		</div>
+		<div class="qa">
+
+			<p class="q"><em>Q</em> 소화기는 어떻게 폐기하나요?</p>
+
+			<p class="a">소량의 경우 폐기물 스티커를 부착해 지정된 장소에 배출하시면 됩니다. 대량 폐소화기 처리는 제조사(043-536-0119)로 연락 주시면 무상 수거 및 처리를 지원해 드립니다.</p>
+		</div>
+		<div class="qa">
+
+			<p class="q"><em>Q</em> 차량용 소화기와 일반 소화기는 차이가 있나요?</p>
+
+			<p class="a">일반 소화기는 한국소방산업기술원(KFI)에서 국가 검사 후 성능을 인정받은 제품입니다. 차량용 소화기는 추가로 주행 시 발생할 수 있는 진동과 온도 테스트를 통과한 제품으로, 차량 내에는 ‘자동차겸용’ 표기가 되어 있는 소화기를 비치하셔야 합니다.</p>
+		</div>
+		<div class="qa">
+
+			<p class="q"><em>Q</em> 생산물 책임보험은 가입되어 있나요?</p>
+
+			<p class="a">생산물 책임보험(PL보험)에 가입되어 있어 제품 결함으로 인한 사고 발생 시 관련 법규에 따라 보상이 가능합니다.</p>
+		</div>
+	</section>
+
+	<!-- GUIDE -->
+	<section class="sec guide">
+		<div class="ghead">
+
+			<p class="eyebrow">GUIDE</p>
+
+			<h2>배송 · 교환/반품 · A/S 안내</h2>
+		</div>
+		<div class="g-wrap">
+
+			<div class="g-block">
+
+				<h3>배송 안내</h3>
+
+				<ul>
+					<li>당일 결제 완료 주문 건은 다음 날 출고됩니다.</li>
+					<li>택배사에서 고객님께 배송되는 기간은 평균 3~5일 정도 소요됩니다. (영업일 기준, 주말·공휴일 제외)</li>
+					<li>택배사별 배송 지역이나 택배사 영업소 사정에 따라 배송 기간에 차이가 있을 수 있습니다.</li>
+					<li>제주도 및 도서산간 지역은 별도의 배송 요금이 청구됩니다.</li>
+					<li>제품의 특성상 합포장이 어려운 경우, 동일 주문 건이라도 별도 포장되어 각각 배송될 수 있습니다.</li>
+				</ul>
+			</div>
+
+			<div class="g-block">
+
+				<h3>교환 / 반품 안내</h3>
+
+				<h4>교환 및 반품이 가능한 경우</h4>
+
+				<ul>
+					<li>교환 및 반품은 제품 수령 후 7일 이내에 가능합니다.</li>
+					<li>단순 변심으로 인한 교환, 반품, 환불 시 왕복 택배비는 고객님 부담입니다.</li>
+				</ul>
+
+				<h4>교환 및 반품이 불가능한 경우</h4>
+
+				<ul>
+					<li>반품 요청 기간이 지난 경우</li>
+					<li>구매자의 책임 있는 사유로 상품 등이 멸실 또는 훼손된 경우 (단, 상품의 내용을 확인하기 위하여 포장 등을 훼손한 경우는 제외)</li>
+					<li>제품 포장이 훼손되어 상품 가치가 현저히 상실된 경우</li>
+					<li>구매자의 사용 또는 일부 소비로 인해 상품 등의 가치가 현저히 감소한 경우</li>
+					<li>시간의 경과로 인해 재판매가 곤란할 정도로 상품 등의 가치가 현저히 감소한 경우</li>
+					<li>고객 주문 확인 후 상품 제작에 들어가는 주문 제작 상품 (단, 판매자에게 회복 불가능한 손해가 예상되고, 해당 사유로 청약철회권 행사가 불가하다는 사실에 대해 서면 동의를 받은 경우에 한함)</li>
+					<li>복제가 가능한 상품 등의 포장을 훼손한 경우</li>
+				</ul>
+
+				<p class="g-note">※ 근거법률: 전자상거래 등에서의 소비자보호에 관한 법률 제17조(청약철회 등)</p>
+			</div>
+
+			<div class="g-block">
+
+				<h3>A/S 안내</h3>
+
+				<p style="font-size:14px;color:#333;margin-bottom:10px;">A/S 대표전화 <span class="g-tel">043-536-0119</span> <span style="color:#888;font-size:13px;">(평일 09:00~18:00 / 토·일요일 및 공휴일 휴무)</span></p>
+
+				<ul>
+					<li>구매 후 1년 이내 압력 저하 시 무료 교환 (배송비 제조사 부담)</li>
+					<li>1년 경과 후에는 택배비 고객 부담으로 내용연한 만료일까지 유상 A/S 가능</li>
+				</ul>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- FOOTER -->
+	<footer class="foot">
+		<div class="brand">SAFELIFE</div>
+		<div class="slogan-ko">가정/상업용 분말 소화기 · Z33</div>
+		<div class="cs">고객센터 1588-3112</div>
+	</footer>
+
+</div>
